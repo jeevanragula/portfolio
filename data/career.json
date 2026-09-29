@@ -1,0 +1,230 @@
+{
+  "profile": {
+    "name": "Jeevan Reddy Ragula",
+    "title": "Principal Software Engineer & Architect",
+    "company": "Zscaler",
+    "location": "Hyderabad, India",
+    "experience": "19 years",
+    "headline": "Architecting the Future of Cloud Security",
+    "description": "With 19 years of software engineering experience, I specialize in designing and scaling cloud-native security platforms and distributed systems. At Zscaler, I have been a core engineer and architect across Zscaler Posture Control (ZPC), DSPM, and AI Security initiatives. My work spans Go, Kubernetes, AWS, distributed data platforms, event-driven systems, and AI-native architectures.",
+    "email": "jeevanragula@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/jeevanragula",
+    "github": "https://github.com/jeevanragula",
+    "twitter": "https://twitter.com/jeevanragula",
+    "portfolio": "https://jeevanragula.vercel.app/"
+  },
+  "products": [
+    {
+      "id": "prod-aisec",
+      "badge": "AI Security",
+      "title": "AI Security / AI Asset Management",
+      "icon": "ai",
+      "description": "Architecting an AI security platform that brings together AI models, agents, MCP servers, workloads, AI identities and related assets across cloud and developer environments, with AI-native integrations and security workflows.",
+      "features": [
+        "AI model, agent and workload inventory",
+        "MCP and agent-oriented architecture",
+        "AWS, Azure, GCP and GitHub integrations",
+        "Go, Kubernetes, Kafka and Redis-based services"
+      ]
+    },
+    {
+      "id": "prod-dspm",
+      "badge": "Core Architecture",
+      "title": "Data Security Posture Management (DSPM)",
+      "icon": "dspm",
+      "description": "Core architect and engineer for distributed DSPM scanning workflows, covering dynamic data snapshots, cloud storage and database crawling, distributed scan execution, DLP integration, and results processing in a multi-tenant cloud environment.",
+      "features": [
+        "Cloud data discovery across customer environments",
+        "Distributed file and database scanning workflows",
+        "DLP integration and scan-result processing",
+        "Multi-tenant cloud-scale orchestration"
+      ]
+    },
+    {
+      "id": "prod-zpc",
+      "badge": "Cloud Security Platform",
+      "title": "Zscaler Posture Control (ZPC)",
+      "icon": "zpc",
+      "description": "Core engineer and architect involved in building ZPC, a cloud security platform spanning cloud inventory, posture management, policy evaluation, IaC security, vulnerability workflows, and integrations across AWS, Azure, GCP, Kubernetes and developer platforms.",
+      "features": [
+        "Multi-cloud security and resource inventory",
+        "Cloud posture and policy evaluation",
+        "IaC security and vulnerability workflows",
+        "Distributed microservices on Kubernetes"
+      ]
+    }
+  ],
+  "patents": [
+    {
+      "id": "pat-1",
+      "number": "U.S. Patent 12,598,208",
+      "name": "Infrastructure as Code (IaC) Scanner for Component Security",
+      "description": "A specialized scanning architecture that parses, compiles, and evaluates compliance and security policies against IaC blueprints (Terraform, CloudFormation) before deployment, shifting security left."
+    },
+    {
+      "id": "pat-2",
+      "number": "Pub. No. 20250202926",
+      "name": "Cloud-Based Data Security Posture Management (DSPM)",
+      "description": "Systems and methods for discovering, classifying, and monitoring data assets across heterogeneous cloud services, evaluating compliance, and enforcing localized policy frameworks."
+    }
+  ],
+  "skills": [
+    {
+      "id": "skill-cat-1",
+      "category": "Languages & Backend",
+      "items": [
+        [
+          "Go (Golang)",
+          "Expert",
+          95,
+          "bg-cyan"
+        ],
+        [
+          "Java / Spring",
+          "Advanced",
+          88,
+          "bg-violet"
+        ],
+        [
+          "Microservices & APIs",
+          "Advanced",
+          92,
+          "bg-green"
+        ]
+      ]
+    },
+    {
+      "id": "skill-cat-2",
+      "category": "Cloud & Kubernetes",
+      "items": [
+        [
+          "Kubernetes / EKS",
+          "Expert",
+          95,
+          "bg-cyan"
+        ],
+        [
+          "AWS",
+          "Advanced",
+          92,
+          "bg-violet"
+        ],
+        [
+          "Azure / GCP / OCI",
+          "Advanced",
+          85,
+          "bg-green"
+        ],
+        [
+          "Docker / Helm / GitOps",
+          "Advanced",
+          90,
+          "bg-cyan"
+        ]
+      ]
+    },
+    {
+      "id": "skill-cat-3",
+      "category": "Data & Distributed Systems",
+      "items": [
+        [
+          "Kafka / Event Streaming",
+          "Advanced",
+          90,
+          "bg-cyan"
+        ],
+        [
+          "PostgreSQL / MongoDB",
+          "Advanced",
+          88,
+          "bg-violet"
+        ],
+        [
+          "ClickHouse / Snowflake",
+          "Advanced",
+          88,
+          "bg-green"
+        ],
+        [
+          "Spark / Delta Lake / Databricks",
+          "Advanced",
+          84,
+          "bg-cyan"
+        ]
+      ]
+    }
+  ],
+  "career": [
+    [
+      "time-item-1",
+      "Apr 2022 - Present",
+      "Principal Software Engineer & Architect",
+      "Zscaler India Pvt Ltd",
+      "Leading architecture and core engineering across cloud security and AI security initiatives, including Zscaler Posture Control, DSPM and AI security platforms. Focus areas include Go microservices, Kubernetes, multi-cloud security, distributed data processing, and AI-native architectures."
+    ],
+    [
+      "time-item-2",
+      "Aug 2021 - Mar 2022",
+      "Senior Staff Software Engineer",
+      "Zscaler India Pvt Ltd",
+      "Worked on cloud security product engineering, distributed services, event-driven systems and security technologies while contributing to the architecture and scale-up of Zscaler's cloud security platform."
+    ],
+    [
+      "time-item-3",
+      "Aug 2019 - Aug 2021",
+      "Senior Staff Engineer",
+      "McAfee India Pvt Ltd",
+      "Worked on the Cloud Connector team for a cloud access security broker (CASB) product, building cloud security services and integrations for enterprise environments."
+    ],
+    [
+      "time-item-4",
+      "Jul 2010 - Jul 2019",
+      "Lead - Software Development",
+      "IVY Software Development Services Pvt Ltd",
+      "Led engineering for a PCI DSS payment gateway platform for Entain, including payment integrations, high-volume transaction processing, Java/Spring-based services, and enterprise database systems."
+    ],
+    [
+      "time-item-5",
+      "Nov 2009 - Jul 2010",
+      "Software Engineer",
+      "HP",
+      "Worked on HPE Serviceguard for Linux and related management software using Java and JavaScript."
+    ],
+    [
+      "time-item-6",
+      "Aug 2007 - Oct 2009",
+      "Application Developer",
+      "IBM",
+      "Worked as an application developer in the automotive domain, building enterprise software using Java."
+    ],
+    [
+      "time-item-7",
+      "2003 - 2007",
+      "B.Tech in Electronics & Communication Engineering",
+      "JNTU Hyderabad",
+      "Bachelor of Technology in Electronics & Communication Engineering, completed at Jawaharlal Nehru Technological University, Hyderabad."
+    ]
+  ],
+  "openSource": {
+    "keda": {
+      "name": "KEDA",
+      "url": "https://github.com/kedacore/keda",
+      "description": "Contributor to Kubernetes Event-Driven Autoscaling (KEDA), an open-source project for event-driven workload autoscaling on Kubernetes."
+    }
+  },
+  "contact": {
+    "title": "Let's discuss Cloud Security",
+    "subtitle": "I am always open to discussing new technology stacks, speaking arrangements at meetups, or architecture inquiries.",
+    "location": "Hyderabad, India"
+  },
+  "terminal": {
+    "commands": {
+      "help": "Available: help, bio, skills, products, patents, contact, clear",
+      "bio": "Jeevan Reddy Ragula — Principal Software Engineer & Architect. Cloud security, distributed systems, Kubernetes, Go and AI security.",
+      "skills": "Go · Kubernetes · AWS · Azure · GCP · Kafka · PostgreSQL · MongoDB · ClickHouse · Spark · Databricks",
+      "products": "AI Security / AI Asset Management · DSPM · Zscaler Posture Control",
+      "patents": "U.S. Patent 12,598,208 · Pub. No. 20250202926",
+      "contact": "Hyderabad, India · LinkedIn: linkedin.com/in/jeevanragula"
+    }
+  }
+}
