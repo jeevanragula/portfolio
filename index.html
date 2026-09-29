@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeevan Reddy Ragula | Principal Software Engineer & Architect</title>
+    
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="Portfolio of Jeevan Reddy Ragula, Principal Software Engineer & Architect at Zscaler. Cloud-native, cybersecurity, distributed systems and AI security architect specializing in Go, Kubernetes and AWS.">
+    <meta name="keywords" content="Jeevan Reddy Ragula, Zscaler, DSPM, AI Security, Cloud Security, Kubernetes, GoLang, KEDA, Infrastructure as Code, IaC Scanner, Software Architect, Hyderabad">
+    <meta name="author" content="Jeevan Reddy Ragula">
+    
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:title" content="Jeevan Reddy Ragula | Principal Cloud-Native & AI Security Architect">
+    <meta property="og:description" content="Principal Software Engineer & Architect specializing in cloud-native security, distributed systems, data platforms and AI security.">
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://jeevanragula.netlify.app/">
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/2085572?v=4">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Interactive Background Canvas -->
+    <canvas id="mesh-canvas"></canvas>
+
+    <!-- Header Navigation -->
+    <header class="navbar-header" id="nav-header">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-accent">&lt;</span>Jeevan.R<span class="logo-accent">/&gt;</span>
+            </a>
+            
+            <!-- Mobile Menu Toggle Button -->
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Navigation Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#hero" class="nav-link active" id="link-hero">Home</a>
+                <a href="#products" class="nav-link" id="link-products">Products</a>
+                <a href="#patents" class="nav-link" id="link-patents">Patents</a>
+                <a href="#skills" class="nav-link" id="link-skills">Skills</a>
+                <a href="#timeline" class="nav-link" id="link-timeline">Experience</a>
+                <a href="#github" class="nav-link" id="link-github">Open Source</a>
+                <a href="#contact" class="nav-link nav-btn" id="link-contact">Contact Me</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section & Interactive Terminal -->
+        <section id="hero" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="status-badge">
+                        <span class="status-dot animate-pulse"></span>
+                        <span class="status-text">Principal Software Engineer &amp; Architect @ Zscaler</span>
+                    </div>
+                    <h1 class="hero-title">
+                        Architecting the Future of <span class="gradient-text glow-cyan">Cloud Security</span>
+                    </h1>
+                    <p class="hero-description">
+                        With 19 years of software engineering experience, I specialize in designing and scaling cloud-native security platforms and distributed systems. At Zscaler, I have been a core engineer and architect across <strong>Zscaler Posture Control (ZPC)</strong>, <strong>DSPM</strong>, and <strong>AI Security</strong> initiatives. My work spans Go, Kubernetes, AWS, distributed data platforms, event-driven systems, and AI-native architectures.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#products" class="btn btn-primary" id="btn-hero-explore">Explore Platform Work</a>
+                        <a href="#contact" class="btn btn-secondary" id="btn-hero-contact">Get in Touch</a>
+                    </div>
+                </div>
+                
+                <!-- Terminal Console Widget -->
+                <div class="hero-terminal">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <span class="btn-dot close"></span>
+                            <span class="btn-dot minimize"></span>
+                            <span class="btn-dot maximize"></span>
+                        </div>
+                        <div class="terminal-title">jeevan@zscaler-node-1:~</div>
+                        <div class="terminal-badge">Go</div>
+                    </div>
+                    <div class="terminal-body" id="terminal-body">
+                        <div class="terminal-output" id="terminal-output">
+                            <div class="output-line system">Initializing cloud-native profile connection...</div>
+                            <div class="output-line system">Session connected. Type <span class="highlight-cyan">'help'</span> to see available commands.</div>
+                            <br>
+                            <div class="output-line"><span class="terminal-user">guest@portfolio:~$</span> <span class="command-text">cat bio.txt</span></div>
+                            <div class="output-line reply">Jeevan Reddy Ragula - Principal Software Engineer &amp; Architect based in Hyderabad, India. Focused on cloud-native security, distributed systems, Kubernetes, Go, data platforms, and AI security.</div>
+                            <br>
+                        </div>
+                        <div class="terminal-input-line">
+                            <span class="terminal-user">guest@portfolio:~$</span>
+                            <input type="text" id="terminal-input" autocomplete="off" autofocus placeholder="Type cmd here..." aria-label="Terminal Input">
+                            <span class="cursor-block"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products" class="section-container">
+            <div class="section-header">
+                <span class="section-subtitle">PLATFORM ARCHITECTURE</span>
+                <h2 class="section-title">Core Products &amp; Systems</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="products-grid">
+                <div class="product-card glass-panel" id="prod-zpc">
+                    <div class="product-icon-wrap bg-cyan">
+                        <svg class="product-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            <path d="M9 12l2 2 4-5"/>
+                        </svg>
+                    </div>
+                    <div class="product-badge">Cloud Security Platform</div>
+                    <h3 class="product-title">Zscaler Posture Control (ZPC)</h3>
+                    <p class="product-text">
+                        Core engineer and architect involved in building ZPC, a cloud security platform spanning cloud inventory, posture management, policy evaluation, IaC security, vulnerability workflows, and integrations across AWS, Azure, GCP, Kubernetes and developer platforms.
+                    </p>
+                    <ul class="product-features">
+                        <li><span class="check-icon">✓</span> Multi-cloud security and resource inventory</li>
+                        <li><span class="check-icon">✓</span> Cloud posture and policy evaluation</li>
+                        <li><span class="check-icon">✓</span> IaC security and vulnerability workflows</li>
+                        <li><span class="check-icon">✓</span> Distributed microservices on Kubernetes</li>
+                    </ul>
+                </div>
+
+                <div class="product-card glass-panel" id="prod-dspm">
+                    <div class="product-icon-wrap bg-violet">
+                        <svg class="product-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            <circle cx="12" cy="11" r="3"/>
+                            <path d="M12 14v4"/>
+                        </svg>
+                    </div>
+                    <div class="product-badge">Core Architecture</div>
+                    <h3 class="product-title">Data Security Posture Management (DSPM)</h3>
+                    <p class="product-text">
+                        Core architect and engineer for distributed DSPM scanning workflows, covering dynamic data snapshots, cloud storage and database crawling, distributed scan execution, DLP integration, and results processing in a multi-tenant cloud environment.
+                    </p>
+                    <ul class="product-features">
+                        <li><span class="check-icon">✓</span> Cloud data discovery across customer environments</li>
+                        <li><span class="check-icon">✓</span> Distributed file and database scanning workflows</li>
+                        <li><span class="check-icon">✓</span> DLP integration and scan-result processing</li>
+                        <li><span class="check-icon">✓</span> Multi-tenant cloud-scale orchestration</li>
+                    </ul>
+                </div>
+
+                <div class="product-card glass-panel" id="prod-aisec">
+                    <div class="product-icon-wrap bg-cyan">
+                        <svg class="product-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                            <circle cx="12" cy="12" r="9"/>
+                        </svg>
+                    </div>
+                    <div class="product-badge glow-neon">AI Security</div>
+                    <h3 class="product-title">AI Security / AI Asset Management</h3>
+                    <p class="product-text">
+                        Architecting an AI security platform that brings together AI models, agents, MCP servers, workloads, AI identities and related assets across cloud and developer environments, with AI-native integrations and security workflows.
+                    </p>
+                    <ul class="product-features">
+                        <li><span class="check-icon">✓</span> AI model, agent and workload inventory</li>
+                        <li><span class="check-icon">✓</span> MCP and agent-oriented architecture</li>
+                        <li><span class="check-icon">✓</span> AWS, Azure, GCP and GitHub integrations</li>
+                        <li><span class="check-icon">✓</span> Go, Kubernetes, Kafka and Redis-based services</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Patents Section & Interactive IaC Simulator -->
+        <section id="patents" class="section-container bg-offset">
+            <div class="section-header">
+                <span class="section-subtitle">INTELLECTUAL PROPERTY</span>
+                <h2 class="section-title">Patents & Innovation</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="patents-layout">
+                <!-- Patents Grid -->
+                <div class="patents-list">
+                    <!-- Patent 1 -->
+                    <div class="patent-item glass-panel" id="pat-1">
+                        <div class="patent-number">U.S. Patent 12,598,208</div>
+                        <h4 class="patent-name">Infrastructure as Code (IaC) Scanner for Component Security</h4>
+                        <p class="patent-desc">A specialized scanning architecture that parses, compiles, and evaluates compliance and security policies against IaC blueprints (Terraform, CloudFormation) before deployment, shifting security left.</p>
+                    </div>
+
+                    <!-- Patent 2 -->
+                    <div class="patent-item glass-panel" id="pat-2">
+                        <div class="patent-number">Pub. No. 20250202926</div>
+                        <h4 class="patent-name">Cloud-Based Data Security Posture Management (DSPM)</h4>
+                        <p class="patent-desc">Systems and methods for discovering, classifying, and monitoring data assets across heterogeneous cloud services, evaluating compliance, and enforcing localized policy frameworks.</p>
+                    </div></div>
+
+                <!-- Interactive IaC Simulator Widget -->
+                <div class="iac-simulator glass-panel" id="iac-simulator">
+                    <h3 class="simulator-title">Live Demo: Interactive IaC Scanner</h3>
+                    <p class="simulator-intro">See the IaC security concept represented by the granted patent in action. Run the simulation to analyze a Terraform config block for a common security misconfiguration.</p>
+                    
+                    <div class="sim-editor-wrap">
+                        <div class="sim-editor-header">
+                            <span class="editor-file">terraform_deployment.tf</span>
+                            <span class="editor-lang">HCL</span>
+                        </div>
+                        <pre class="sim-editor-body" id="sim-code"><code><span class="keyword">resource</span> <span class="string">"aws_security_group"</span> <span class="string">"app_sg"</span> {
+  <span class="property">name</span>        = <span class="string">"application-security-group"</span>
+  <span class="property">vpc_id</span>      = aws_vpc.main.id
+
+  <span class="keyword">ingress</span> {
+    <span class="property">description</span> = <span class="string">"SSH Access"</span>
+    <span class="property">from_port</span>   = <span class="number">22</span>
+    <span class="property">to_port</span>     = <span class="number">22</span>
+    <span class="property">protocol</span>    = <span class="string">"tcp"</span>
+    <span class="property">cidr_blocks</span> = [<span class="warning">"0.0.0.0/0"</span>] <span class="comment"># ALERT: Wildcard access!</span>
+  }
+}</code></pre>
+                    </div>
+
+                    <div class="sim-actions">
+                        <button class="btn btn-primary btn-full" id="btn-run-scan">Execute Security Scan</button>
+                    </div>
+
+                    <div class="sim-terminal" id="sim-terminal">
+                        <div class="terminal-line placeholder" id="sim-terminal-placeholder">Ready to scan... Click the button above to test the security policy analyzer.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section-container">
+            <div class="section-header">
+                <span class="section-subtitle">TECHNICAL PROFICIENCY</span>
+                <h2 class="section-title">Core Skills &amp; Tech Stack</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-category glass-panel" id="skill-cat-1">
+                    <h3 class="category-title">Languages &amp; Backend</h3>
+                    <div class="skill-list">
+                        <div class="skill-item"><div class="skill-info"><span class="skill-name">Go (Golang)</span><span class="skill-val">Expert</span></div><div class="skill-bar-bg"><div class="skill-bar bg-cyan" style="width:0%" data-width="95%"></div></div></div>
+                        <div class="skill-item"><div class="skill-info"><span class="skill-name">Java / Spring</span><span class="skill-val">Advanced</span></div><div class="skill-bar-bg"><div class="skill-bar bg-violet" style="width:0%" data-width="88%"></div></div></div>
+                        <div class="skill-item"><div class="skill-info"><span class="skill-name">Microservices &amp; APIs</span><span class="skill-val">Advanced</span></div><div class="skill-bar-bg"><div class="skill-bar bg-green" style="width:0%" data-width="92%"></div></div></div>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-panel" id="skill-cat-2">
+                    <h3 class="category-title">Cloud &amp; Kubernetes</h3>
+                    <div class="skill-list">
+                        <div class="skill-item"><div class="skill-info"><span class="skill-name">Kubernetes / EKS</span><span class="skill-val">Expert</span></div><div class="skill-bar-bg"><div class="skill-bar bg-cyan" style="width:0%" data-width="95%"></div></div></div>
+                        <div class="skill-item"><div class="skill-info"><span class="skill-name">AWS</span><span class="skill-val">Advanced</span></div><div class="skill-bar-bg"><div class="skill-bar bg-violet" style="width:0%" data-width="92%"></div></div></div>
+                        <div class="skill-item"><div class="skill-info"><span class="skill-name">Azure / GCP / OCI</span><span class="skill-val">Advanced</span></div><div class="skill-bar-bg"><div class="skill-bar bg-green" style="width:0%" data-width="85%"></div></div></div>
+                        <div class="skill-item"><div class="skill-info"><span class="skill-name">Docker / Helm / GitOps</span><span class="skill-val">Advanced</span></div><div class="skill-bar-bg"><div class="skill-bar bg-cyan" style="width:0%" data-width="90%"></div></div></div>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-panel" id="skill-cat-3">
+                    <h3 class="category-title">Data &amp; Distributed Systems</h3>
+                    <div class="skill-list">
+                        <div class="skill-item"><div class="skill-info"><span class="skill-name">Kafka / Event Streaming</span><span class="skill-val">Advanced</span></div><div class="skill-bar-bg"><div class="skill-bar bg-cyan" style="width:0%" data-width="90%"></div></div></div>
+                        <div class="skill-item"><div class="skill-info"><span class="skill-name">PostgreSQL / MongoDB</span><span class="skill-val">Advanced</span></div><div class="skill-bar-bg"><div class="skill-bar bg-violet" style="width:0%" data-width="88%"></div></div></div>
+                        <div class="skill-item"><div class="skill-info"><span class="skill-name">ClickHouse / Snowflake</span><span class="skill-val">Advanced</span></div><div class="skill-bar-bg"><div class="skill-bar bg-green" style="width:0%" data-width="88%"></div></div></div>
+                        <div class="skill-item"><div class="skill-info"><span class="skill-name">Spark / Delta Lake / Databricks</span><span class="skill-val">Advanced</span></div><div class="skill-bar-bg"><div class="skill-bar bg-cyan" style="width:0%" data-width="84%"></div></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline Section -->
+        <section id="timeline" class="section-container bg-offset">
+            <div class="section-header">
+                <span class="section-subtitle">PROFESSIONAL JOURNEY</span>
+                <h2 class="section-title">Career Timeline</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="timeline-container">
+                <div class="timeline-line-bar"></div>
+
+                <div class="timeline-item left" id="time-item-1">
+                    <div class="timeline-badge bg-cyan"></div>
+                    <div class="timeline-card glass-panel">
+                        <span class="timeline-date">Apr 2022 - Present</span>
+                        <h3 class="timeline-job-title">Principal Software Engineer &amp; Architect</h3>
+                        <h4 class="timeline-company">Zscaler India Pvt Ltd</h4>
+                        <p class="timeline-details">Leading architecture and core engineering across cloud security and AI security initiatives, including Zscaler Posture Control, DSPM and AI security platforms. Focus areas include Go microservices, Kubernetes, multi-cloud security, distributed data processing, and AI-native architectures.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item right" id="time-item-2">
+                    <div class="timeline-badge bg-violet"></div>
+                    <div class="timeline-card glass-panel">
+                        <span class="timeline-date">Aug 2021 - Mar 2022</span>
+                        <h3 class="timeline-job-title">Senior Staff Software Engineer</h3>
+                        <h4 class="timeline-company">Zscaler India Pvt Ltd</h4>
+                        <p class="timeline-details">Worked on cloud security product engineering, distributed services, event-driven systems and security technologies while contributing to the architecture and scale-up of Zscaler's cloud security platform.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item left" id="time-item-3">
+                    <div class="timeline-badge bg-green"></div>
+                    <div class="timeline-card glass-panel">
+                        <span class="timeline-date">Aug 2019 - Aug 2021</span>
+                        <h3 class="timeline-job-title">Senior Staff Engineer</h3>
+                        <h4 class="timeline-company">McAfee India Pvt Ltd</h4>
+                        <p class="timeline-details">Worked on the Cloud Connector team for a cloud access security broker (CASB) product, building cloud security services and integrations for enterprise environments.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item right" id="time-item-4">
+                    <div class="timeline-badge bg-cyan"></div>
+                    <div class="timeline-card glass-panel">
+                        <span class="timeline-date">Jul 2010 - Jul 2019</span>
+                        <h3 class="timeline-job-title">Lead - Software Development</h3>
+                        <h4 class="timeline-company">IVY Software Development Services Pvt Ltd</h4>
+                        <p class="timeline-details">Led engineering for a PCI DSS payment gateway platform for Entain, including payment integrations, high-volume transaction processing, Java/Spring-based services, and enterprise database systems.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item left" id="time-item-5">
+                    <div class="timeline-badge bg-violet"></div>
+                    <div class="timeline-card glass-panel">
+                        <span class="timeline-date">Nov 2009 - Jul 2010</span>
+                        <h3 class="timeline-job-title">Software Engineer</h3>
+                        <h4 class="timeline-company">HP</h4>
+                        <p class="timeline-details">Worked on HPE Serviceguard for Linux and related management software using Java and JavaScript.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item right" id="time-item-6">
+                    <div class="timeline-badge bg-green"></div>
+                    <div class="timeline-card glass-panel">
+                        <span class="timeline-date">Aug 2007 - Oct 2009</span>
+                        <h3 class="timeline-job-title">Application Developer</h3>
+                        <h4 class="timeline-company">IBM</h4>
+                        <p class="timeline-details">Worked as an application developer in the automotive domain, building enterprise software using Java.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item left" id="time-item-7">
+                    <div class="timeline-badge bg-cyan"></div>
+                    <div class="timeline-card glass-panel">
+                        <span class="timeline-date">2003 - 2007</span>
+                        <h3 class="timeline-job-title">B.Tech in Electronics &amp; Communication Engineering</h3>
+                        <h4 class="timeline-company">JNTU Hyderabad</h4>
+                        <p class="timeline-details">Bachelor of Technology in Electronics &amp; Communication Engineering, completed at Jawaharlal Nehru Technological University, Hyderabad.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Open Source / GitHub Section -->
+        <section id="github" class="section-container">
+            <div class="section-header">
+                <span class="section-subtitle">OPEN SOURCE &amp; COMMUNITY</span>
+                <h2 class="section-title">Open Source Spotlight</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="github-grid">
+                <a href="https://github.com/kedacore/keda" target="_blank" class="github-card glass-panel" id="repo-1">
+                    <div class="repo-header">
+                        <svg class="repo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
+                        </svg>
+                        <h3 class="repo-name">KEDA</h3>
+                    </div>
+                    <p class="repo-desc">Contributor to Kubernetes Event-Driven Autoscaling (KEDA), an open-source project for event-driven workload autoscaling on Kubernetes.</p>
+                    <div class="repo-meta">
+                        <span class="repo-lang"><span class="lang-dot go"></span>Go</span>
+                        <span class="repo-badge">Contributor</span>
+                    </div>
+                </a>
+
+                <a href="https://github.com/jeevanragula" target="_blank" class="github-card glass-panel" id="repo-2">
+                    <div class="repo-header">
+                        <svg class="repo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
+                        </svg>
+                        <h3 class="repo-name">Jeevan Reddy Ragula / GitHub</h3>
+                    </div>
+                    <p class="repo-desc">My public GitHub profile, including open-source contributions, engineering projects and experiments.</p>
+                    <div class="repo-meta">
+                        <span class="repo-lang"><span class="lang-dot go"></span>Go / Cloud Native</span>
+                        <span class="repo-badge">Profile</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section-container bg-offset">
+            <div class="section-header">
+                <span class="section-subtitle">GET IN TOUCH</span>
+                <h2 class="section-title">Start a Connection</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="contact-layout">
+                <!-- Contact info cards -->
+                <div class="contact-info">
+                    <h3 class="contact-title">Let's discuss Cloud Security</h3>
+                    <p class="contact-subtitle">I am always open to discussing new technology stacks, speaking arrangements at meetups, or architecture inquiries.</p>
+                    
+                    <div class="contact-details-list">
+                        <div class="details-item">
+                            <div class="item-icon-wrapper bg-cyan">
+                                <svg class="details-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </div>
+                            <div class="item-text-wrapper">
+                                <span class="label">Email Me</span>
+                                <a href="mailto:jeevanragula@gmail.com" class="value link">jeevanragula@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="details-item">
+                            <div class="item-icon-wrapper bg-violet">
+                                <svg class="details-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                            </div>
+                            <div class="item-text-wrapper">
+                                <span class="label">Location</span>
+                                <span class="value">Hyderabad, India</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-channels">
+                        <a href="https://in.linkedin.com/in/jeevanragula" target="_blank" class="social-btn glass-panel" aria-label="LinkedIn">
+                            <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                <rect x="2" y="9" width="4" height="12"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/jeevanragula" target="_blank" class="social-btn glass-panel" aria-label="GitHub">
+                            <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com/jeevanragula" target="_blank" class="social-btn glass-panel" aria-label="Twitter / X">
+                            <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Form Panel -->
+                <div class="contact-form-panel glass-panel">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="frm-name">Your Name</label>
+                            <input type="text" id="frm-name" required placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="frm-email">Email Address</label>
+                            <input type="email" id="frm-email" required placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="frm-subject">Subject</label>
+                            <input type="text" id="frm-subject" required placeholder="What are we discussing?">
+                        </div>
+                        <div class="form-group">
+                            <label for="frm-message">Message</label>
+                            <textarea id="frm-message" rows="5" required placeholder="Write your message here..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full btn-submit" id="btn-submit">
+                            <span class="btn-text">Transmit Message</span>
+                            <svg class="submit-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="22" y1="2" x2="11" y2="13"/>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                            </svg>
+                        </button>
+                    </form>
+                    <div class="form-success-message" id="form-success">
+                        <div class="success-icon-wrapper">
+                            <svg class="success-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                        </div>
+                        <h4>Transmission Successful!</h4>
+                        <p>Your message has bypassed cloud defenses and arrived in Jeevan's inbox.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="portfolio-footer">
+        <div class="footer-container">
+            <div class="footer-col-about">
+                <a href="#" class="footer-logo">
+                    <span class="logo-accent">&lt;</span>Jeevan.R<span class="logo-accent">/&gt;</span>
+                </a>
+                <p class="footer-text">Designing scalable cloud-native security and distributed systems for modern enterprises.</p>
+            </div>
+            <div class="footer-col-links">
+                <span class="footer-header">Sections</span>
+                <a href="#hero">Home</a>
+                <a href="#products">Products</a>
+                <a href="#patents">Patents</a>
+                <a href="#skills">Skills</a>
+                <a href="#timeline">Experience</a>
+            </div>
+            <div class="footer-col-meta">
+                <span class="footer-header">Focus</span>
+                <span class="compliance-badge">Cloud Security</span>
+                <span class="compliance-badge">AI Security</span>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>&copy; 2026 Jeevan Reddy Ragula. All rights reserved. Architected with raw HTML, CSS, and JS.</p>
+        </div>
+    </footer>
+
+    <!-- Custom Script -->
+    <script src="app.js"></script>
+</body>
+</html>
