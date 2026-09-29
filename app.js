@@ -22,7 +22,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     const { profile } = data;
 
     document.title = `${profile.name} | ${profile.title}`;
-    setText(".nav-logo", `<placeholder>`);
     const logo = qs(".nav-logo");
     if (logo) logo.innerHTML = '<span class="logo-accent">&lt;</span>' + escapeHtml(profile.name) + '<span class="logo-accent">/&gt;</span>';
 
