@@ -1,7 +1,7 @@
 {
   "profile": {
     "name": "Jeevan Reddy Ragula",
-    "title": "Principal Software Engineer & Architect",
+    "title": "Architect",
     "company": "Zscaler",
     "location": "Hyderabad, India",
     "experience": "19 years",
@@ -11,7 +11,19 @@
     "linkedin": "https://www.linkedin.com/in/jeevanragula",
     "github": "https://github.com/jeevanragula",
     "twitter": "https://twitter.com/jeevanragula",
-    "portfolio": "https://jeevanragula.vercel.app/"
+    "portfolio": "https://jeevanragula.vercel.app/",
+    "roleHistory": [
+      {
+        "title": "Architect",
+        "company": "Zscaler India Pvt Ltd",
+        "period": "Oct 2024 - Present"
+      },
+      {
+        "title": "Principal Software Engineer",
+        "company": "Zscaler India Pvt Ltd",
+        "period": "Apr 2022 - Sep 2024"
+      }
+    ]
   },
   "products": [
     {
@@ -157,48 +169,55 @@
   "career": [
     [
       "time-item-1",
-      "Apr 2022 - Present",
-      "Principal Software Engineer & Architect",
+      "Oct 2024 - Present",
+      "Architect",
       "Zscaler India Pvt Ltd",
-      "Leading architecture and core engineering across cloud security and AI security initiatives, including Zscaler Posture Control, DSPM and AI security platforms. Focus areas include Go microservices, Kubernetes, multi-cloud security, distributed data processing, and AI-native architectures."
+      "Architecting cloud security and AI security platforms, including Zscaler Posture Control, DSPM and AI security initiatives. Focus areas include Go microservices, Kubernetes, multi-cloud security, distributed data platforms, event-driven systems, and AI-native architectures."
     ],
     [
       "time-item-2",
+      "Apr 2022 - Sep 2024",
+      "Principal Software Engineer",
+      "Zscaler India Pvt Ltd",
+      "Core engineer and technical leader across Zscaler cloud security products, contributing to architecture, distributed services, cloud security workflows, data platforms, and large-scale Kubernetes-based systems."
+    ],
+    [
+      "time-item-3",
       "Aug 2021 - Mar 2022",
       "Senior Staff Software Engineer",
       "Zscaler India Pvt Ltd",
       "Worked on cloud security product engineering, distributed services, event-driven systems and security technologies while contributing to the architecture and scale-up of Zscaler's cloud security platform."
     ],
     [
-      "time-item-3",
+      "time-item-4",
       "Aug 2019 - Aug 2021",
       "Senior Staff Engineer",
       "McAfee India Pvt Ltd",
       "Worked on the Cloud Connector team for a cloud access security broker (CASB) product, building cloud security services and integrations for enterprise environments."
     ],
     [
-      "time-item-4",
+      "time-item-5",
       "Jul 2010 - Jul 2019",
       "Lead - Software Development",
       "IVY Software Development Services Pvt Ltd",
       "Led engineering for a PCI DSS payment gateway platform for Entain, including payment integrations, high-volume transaction processing, Java/Spring-based services, and enterprise database systems."
     ],
     [
-      "time-item-5",
+      "time-item-6",
       "Nov 2009 - Jul 2010",
       "Software Engineer",
       "HP",
       "Worked on HPE Serviceguard for Linux and related management software using Java and JavaScript."
     ],
     [
-      "time-item-6",
+      "time-item-7",
       "Aug 2007 - Oct 2009",
       "Application Developer",
       "IBM",
       "Worked as an application developer in the automotive domain, building enterprise software using Java."
     ],
     [
-      "time-item-7",
+      "time-item-8",
       "2003 - 2007",
       "B.Tech in Electronics & Communication Engineering",
       "JNTU Hyderabad",
