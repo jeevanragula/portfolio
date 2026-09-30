@@ -1,0 +1,34 @@
+name: Career OS Validation
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate-career-os:
+    name: Validate Career OS
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate Career OS data
+        run: python3 scripts/validate-career-os.py
+
+      - name: Verify required project files
+        run: |
+          test -f index.html
+          test -f index.css
+          test -f app.js
+          test -f data/career.json
+          test -f data/career.schema.json
+          test -f career-os.yaml
+
+      - name: Check for accidental debug markers
+        run: |
+          ! grep -RniE 'console\.log\(|TODO: REMOVE|PLACEHOLDER|<placeholder>' index.html index.css app.js data scripts
