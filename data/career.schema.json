@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Career OS",
+  "type": "object",
+  "required": ["profile", "products", "patents", "skills", "career", "openSource", "contact", "terminal"],
+  "properties": {
+    "profile": {
+      "type": "object",
+      "required": ["name", "title", "company", "location", "experience", "description", "email", "linkedin", "github"],
+      "properties": {
+        "name": {"type": "string", "minLength": 1},
+        "title": {"type": "string", "minLength": 1},
+        "company": {"type": "string"},
+        "location": {"type": "string"},
+        "experience": {"type": "string"},
+        "headline": {"type": "string"},
+        "description": {"type": "string"},
+        "email": {"type": "string", "format": "email"},
+        "linkedin": {"type": "string", "format": "uri"},
+        "github": {"type": "string", "format": "uri"},
+        "twitter": {"type": "string", "format": "uri"},
+        "portfolio": {"type": "string", "format": "uri"},
+        "roleHistory": {"type": "array"}
+      }
+    },
+    "products": {"type": "array"},
+    "patents": {"type": "array"},
+    "skills": {"type": "array"},
+    "career": {"type": "array"},
+    "openSource": {"type": "object"},
+    "contact": {"type": "object"},
+    "terminal": {"type": "object"}
+  }
+}
