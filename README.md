@@ -104,6 +104,31 @@ git push → GitHub → Vercel → Production
 
 When the repository is connected to Vercel, production-branch pushes can trigger deployment automatically.
 
+
+## Career OS Agents
+
+The repository includes a six-agent workflow:
+
+```
+Intake
+  ↓
+Fact & Privacy
+  ↓
+Career Content
+  ↓
+Portfolio Sync
+  ↓
+QA
+  ↓
+Release
+```
+
+Agent contracts live under [agents/](agents/), with the orchestration contract in [career-os.yaml](career-os.yaml).
+
+The default mode is **assisted**: ambiguous or sensitive changes require review before publication. GitHub Actions provides an automated validation gate on pushes and pull requests.
+
+See [agents/README.md](agents/README.md) for the full workflow.
+
 ## Documentation
 
 - [Architecture](docs/ARCHITECTURE.md) — source-of-truth and rendering architecture
