@@ -214,14 +214,17 @@ document.addEventListener("DOMContentLoaded", async () => {
       return line;
     };
 
-    const addLinkReply = (label, href) => {
+    const addLinkReply = (label, href, download = false) => {
       const line = document.createElement("div");
       line.className = "output-line reply";
       const link = document.createElement("a");
       link.href = href;
       link.textContent = label;
-      link.target = "_blank";
-      link.rel = "noopener noreferrer";
+      if (download) link.setAttribute("download", "");
+      else {
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+      }
       line.appendChild(link);
       output.appendChild(line);
     };
@@ -283,7 +286,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         if (education.length) education.forEach(entry => addLine(entry[1] + " | " + entry[2] + " — " + entry[3] + ": " + (entry[4] || "")));
         else addLine("B.Tech, Electronics & Communication Engineering — JNTU Hyderabad (2003–2007).");
       },
-      resume: () => addLinkReply("Download resume (PDF) ↗", "resume.pdf"),
+      resume: () => addLinkReply("Download resume (PDF) ↓", "resume.pdf", true),
       github: () => addLinkReply("GitHub profile ↗", profile.github || "https://github.com/jeevanragula"),
       linkedin: () => addLinkReply("LinkedIn profile ↗", profile.linkedin || "https://www.linkedin.com/in/jeevanragula/"),
       contact: () => {
