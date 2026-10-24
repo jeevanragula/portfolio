@@ -51,7 +51,7 @@
                 <a href="#certifications" class="nav-link" id="link-certifications">Certifications</a>
                 <a href="#skills" class="nav-link" id="link-skills">Skills</a>
                 <a href="#timeline" class="nav-link" id="link-timeline">Experience</a>
-                <a href="#github" class="nav-link" id="link-github">Open Source</a>
+                <a href="#community" class="nav-link" id="link-community">Community</a>
                 <a href="#contact" class="nav-link nav-btn" id="link-contact">Contact Me</a>
             </nav>
         </div>
@@ -437,42 +437,69 @@
             </div>
         </section>
 
-        <!-- Open Source / GitHub Section -->
-        <section id="github" class="section-container">
+        <!-- Community, Open Source & Speaking -->
+        <section id="community" class="section-container">
             <div class="section-header">
-                <span class="section-subtitle">OPEN SOURCE &amp; COMMUNITY</span>
-                <h2 class="section-title">Open Source Spotlight</h2>
+                <span class="section-subtitle">OPEN SOURCE &amp; KNOWLEDGE SHARING</span>
+                <h2 class="section-title">Community</h2>
+                <p class="section-intro">Open-source contributions and technical presentations shared with the developer and cloud-native communities.</p>
                 <div class="title-underline"></div>
             </div>
 
-            <div class="github-grid">
-                <a href="https://github.com/kedacore/keda" target="_blank" class="github-card glass-panel" id="repo-1">
+            <div class="github-grid community-grid">
+                <a href="https://github.com/kedacore/keda" target="_blank" rel="noopener noreferrer" class="github-card glass-panel" id="community-keda">
                     <div class="repo-header">
-                        <svg class="repo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
+                        <svg class="repo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                            <circle cx="12" cy="12" r="9"/>
                         </svg>
-                        <h3 class="repo-name">KEDA</h3>
+                        <h3 class="repo-name">KEDA — Open Source Contribution</h3>
                     </div>
-                    <p class="repo-desc">Contributor to Kubernetes Event-Driven Autoscaling (KEDA), an open-source project for event-driven workload autoscaling on Kubernetes.</p>
+                    <p class="repo-desc">Contributor to Kubernetes Event-Driven Autoscaling (KEDA), helping advance event-driven workload autoscaling for Kubernetes.</p>
                     <div class="repo-meta">
-                        <span class="repo-lang"><span class="lang-dot go"></span>Go</span>
+                        <span class="repo-lang">Kubernetes</span>
                         <span class="repo-badge">Contributor</span>
                     </div>
                 </a>
 
-                <a href="https://github.com/jeevanragula" target="_blank" class="github-card glass-panel" id="repo-2">
+                <article class="github-card glass-panel community-talk" id="talk-grpc">
                     <div class="repo-header">
-                        <svg class="repo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
+                        <svg class="repo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M2 3h20v14H7l-5 4z"/>
+                            <path d="M7 8h10M7 12h7"/>
                         </svg>
-                        <h3 class="repo-name">Jeevan Reddy Ragula / GitHub</h3>
+                        <h3 class="repo-name">Developing Microservices with gRPC</h3>
                     </div>
-                    <p class="repo-desc">My public GitHub profile, including open-source contributions, engineering projects and experiments.</p>
-                    <div class="repo-meta">
-                        <span class="repo-lang"><span class="lang-dot go"></span>Go / Cloud Native</span>
-                        <span class="repo-badge">Profile</span>
+                    <p class="community-event"><a href="https://swecha.org/devdays" target="_blank" rel="noopener noreferrer">Swecha Telangana · 23 Sep 2023</a></p>
+                    <p class="repo-desc">Conducted an informative session during the Swecha Telangana Golang Bootcamp, sharing practical insights and hands-on experience in building efficient, high-performance microservices with gRPC.</p>
+                </article>
+
+                <article class="github-card glass-panel community-talk" id="talk-keda">
+                    <div class="repo-header">
+                        <svg class="repo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M2 3h20v14H7l-5 4z"/>
+                            <path d="M7 8h10M7 12h7"/>
+                        </svg>
+                        <h3 class="repo-name">Kubernetes — Event-Driven Autoscaling Using KEDA</h3>
                     </div>
-                </a>
+                    <p class="community-event"><a href="https://community.cncf.io/hyderabad/" target="_blank" rel="noopener noreferrer">CNCF Hyderabad · 19 Aug 2023</a></p>
+                    <p class="repo-desc">Delivered a presentation and live demonstration on Kubernetes autoscaling with KEDA, showing how event-driven scaling can help manage dynamic containerized workloads.</p>
+                </article>
+
+                <div class="github-card glass-panel community-resources" id="community-resources">
+                    <div class="repo-header">
+                        <svg class="repo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <path d="M14 2v6h6M8 13h8M8 17h8"/>
+                        </svg>
+                        <h3 class="repo-name">Presentations &amp; Publications</h3>
+                    </div>
+                    <p class="repo-desc">Explore my published talks and community activity.</p>
+                    <div class="community-links">
+                        <a href="https://jeevanragula.github.io/#publications" target="_blank" rel="noopener noreferrer">Publications page <span aria-hidden="true">↗</span></a>
+                        <a href="https://www.linkedin.com/posts/devdayshyd-share-7110998783391395840-WlZk/" target="_blank" rel="noopener noreferrer">DevDays LinkedIn post <span aria-hidden="true">↗</span></a>
+                    </div>
+                </div>
             </div>
         </section>
 
