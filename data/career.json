@@ -72,9 +72,10 @@
       "icon": "payments",
       "description": "Across nine years at IVY Comptech, contributed to a PCI DSS-certified payment gateway and cashier platform used across the GVC / Entain group. The system connected multiple payment providers and methods to a consistent payment experience, supporting deposits and transaction processing for a large online gaming business.",
       "features": [
-        "Around 20 payment methods through REST and SOAP",
+        "Around 20 payment methods integrated through REST and SOAP",
         "Payment gateway and cashier workflows for GVC / Entain",
-        "Transaction migrations, distributed caching and performance improvements",
+        "Cashier page load time brought to about 2 seconds",
+        "Transaction migrations and distributed caching",
         "Security hardening, ELK logging and asynchronous alerts"
       ]
     }
