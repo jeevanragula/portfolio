@@ -304,7 +304,7 @@
       "github": "https://github.com/jeevanragula",
       "linkedin": "https://www.linkedin.com/in/jeevanragula/",
       "resume": "Download the current resume PDF: https://jeevanragula.github.io/resume.pdf",
-      "projects": "Use projects to explore Manvasa, WealthOS, Enterprise Payment Gateway, Cloud Connector & Security Telemetry, Serviceguard Manager, and the Fuel Cell Data Acquisition System.",
+      "projects": "Use projects to explore Manvasa, WealthOS, Cloud Connector & Security Telemetry, Serviceguard Manager, and the Fuel Cell Data Acquisition System.",
       "experience": "Use experience to browse the full career timeline.",
       "certifications": "CKAD · KCNA · KCSA · Oracle Cloud Infrastructure DevOps Professional · Oracle Cloud Infrastructure Architect Associate",
       "education": "B.Tech, Electronics & Communication Engineering — JNTU Hyderabad (2003–2007)."
@@ -368,19 +368,6 @@
         "AI Agents",
         "MCP",
         "Portfolio Analytics"
-      ]
-    },
-    {
-      "id": "project-payments",
-      "company": "IVY Comptech / GVC",
-      "period": "2010–2019",
-      "title": "Enterprise Payment Gateway",
-      "description": "Contributed to a PCI DSS-certified payment gateway and cashier platform, integrating approximately 20 payment methods through REST and SOAP; improved cashier page load to about two seconds.",
-      "tags": [
-        "PCI DSS",
-        "Java / Spring",
-        "REST / SOAP",
-        "Payments"
       ]
     },
     {
