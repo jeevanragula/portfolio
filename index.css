@@ -104,3 +104,5 @@ html,body{max-width:100%;overflow-x:hidden}.nav-logo{max-width:calc(100vw - 85px
 .patent-name a:hover{color:var(--cyan)}
 @media(max-width:900px){.certifications-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:600px){.projects-grid,.certifications-grid{grid-template-columns:1fr}.project-card,.certification-card{padding:18px}.section-intro{font-size:14px}}
+
+.certification-link{display:inline-block;margin-top:12px;color:var(--cyan);font-size:12px;text-decoration:none}.certification-link:hover{text-decoration:underline}
