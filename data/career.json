@@ -64,19 +64,6 @@
         "IaC security integrated into developer workflows",
         "Cloud-native distributed services on Kubernetes"
       ]
-    },
-    {
-      "id": "prod-ivy",
-      "badge": "Fintech · Payments",
-      "title": "Enterprise Payment Gateway — GVC / Entain",
-      "icon": "payments",
-      "description": "Across nine years at IVY Comptech, contributed to a PCI DSS-certified payment gateway and cashier platform used across the GVC / Entain group. The system connected multiple payment providers and methods to a consistent payment experience, supporting deposits and transaction processing for a large online gaming business.",
-      "features": [
-        "Integrated approximately 20 payment methods through REST and SOAP",
-        "Payment gateway and cashier workflows for GVC / Entain",
-        "Transaction migrations, distributed caching and performance improvements",
-        "Security hardening, ELK logging and asynchronous email/SMS alerts"
-      ]
     }
   ],
   "patents": [
@@ -317,7 +304,7 @@
       "github": "https://github.com/jeevanragula",
       "linkedin": "https://www.linkedin.com/in/jeevanragula/",
       "resume": "Download the current resume PDF: https://jeevanragula.github.io/resume.pdf",
-      "projects": "Use projects to explore Manvasa, AI Security, DSPM, Cloud Posture & IaC Security, Payment Gateway, and Cloud Connector projects.",
+      "projects": "Use projects to explore Manvasa, Enterprise Payment Gateway, and Cloud Connector & Security Telemetry.",
       "experience": "Use experience to browse the full career timeline.",
       "certifications": "CKAD · KCNA · KCSA · Oracle Cloud Infrastructure DevOps Professional · Oracle Cloud Infrastructure Architect Associate",
       "education": "B.Tech, Electronics & Communication Engineering — JNTU Hyderabad (2003–2007)."
@@ -353,20 +340,6 @@
   ],
   "projects": [
     {
-      "id": "project-ai-security",
-      "company": "Zscaler",
-      "period": "Current",
-      "title": "AI Security & Asset Intelligence",
-      "description": "Architecting an inventory and intelligence platform for AI models, agents, MCP servers, workloads and AI identities, consolidating model metadata, provenance and supply-chain risk signals across cloud and developer ecosystems.",
-      "tags": [
-        "Go",
-        "AI Security",
-        "MCP",
-        "PostgreSQL",
-        "Kubernetes"
-      ]
-    },
-    {
       "id": "project-manvasa",
       "company": "Independent Product",
       "period": "Current · In development",
@@ -381,32 +354,6 @@
         "Playwright"
       ],
       "url": "https://github.com/jeevanragula/manvasa"
-    },
-    {
-      "id": "project-dspm",
-      "company": "Zscaler",
-      "period": "Cloud & Data Security",
-      "title": "Data Security Posture Management",
-      "description": "Designed distributed scan execution and findings workflows for a multi-tenant platform that discovers and classifies sensitive data across cloud storage and databases, integrating DLP findings and security telemetry.",
-      "tags": [
-        "DSPM",
-        "Distributed Scanning",
-        "DLP",
-        "Cloud Security"
-      ]
-    },
-    {
-      "id": "project-zpc",
-      "company": "Zscaler",
-      "period": "Cloud Security",
-      "title": "Cloud Posture & IaC Security",
-      "description": "Built cloud inventory, posture evaluation, vulnerability workflows and infrastructure-as-code security across AWS, Azure, GCP, Kubernetes and developer platforms. Related IaC scanner work is covered by a granted U.S. patent.",
-      "tags": [
-        "CNAPP",
-        "CSPM",
-        "IaC Security",
-        "Policy Engines"
-      ]
     },
     {
       "id": "project-payments",
