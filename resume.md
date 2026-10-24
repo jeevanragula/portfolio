@@ -51,6 +51,7 @@ Cloud-native and AI security architect with 19 years of software engineering exp
 
 ## Certifications
 - Certified Kubernetes Administrator (CKA)
+- Certified Kubernetes Application Developer (CKAD) — [Verify on Credly](https://www.credly.com/earner/earned/badge/00674d8b-c590-4e8c-8727-28b2913d73c7)
 - Kubernetes and Cloud Native Associate (KCNA)
 - Kubernetes and Cloud Native Security Associate (KCSA)
 - Oracle Cloud Infrastructure Certified DevOps Professional
