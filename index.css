@@ -164,3 +164,7 @@ html,body{max-width:100%;overflow-x:hidden}.nav-logo{max-width:calc(100vw - 85px
 body{padding-top:65px}
 @media(min-width:601px) and (max-width:900px){body{padding-top:57px}}
 @media(max-width:600px){body{padding-top:47px}}
+
+
+/* Align the desktop brand name with the hero headline's left edge */
+@media(min-width:901px){.nav-container{padding-left:0}}
