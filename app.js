@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const grid = qs("#certifications-grid");
     if (!grid || !certifications.length) return;
     grid.innerHTML = certifications.map(cert =>
-      '<article class="certification-card glass-panel"><span class="certification-issuer">' + escapeHtml(cert.issuer) + (cert.year ? ' · ' + escapeHtml(cert.year) : '') + '</span><h3>' + escapeHtml(cert.name) + '</h3></article>'
+      '<article class="certification-card glass-panel"><span class="certification-issuer">' + escapeHtml(cert.issuer) + (cert.year ? ' · ' + escapeHtml(cert.year) : '') + '</span><h3>' + escapeHtml(cert.name) + '</h3>' + (cert.url ? '<a class="certification-link" href="' + escapeHtml(cert.url) + '" target="_blank" rel="noopener noreferrer">View credential ↗</a>' : '') + '</article>'
     ).join("");
   }
 
