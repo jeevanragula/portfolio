@@ -6,6 +6,43 @@ document.addEventListener("DOMContentLoaded", async () => {
     if (el) el.textContent = value;
   };
 
+  // Dark mode is the default. Remember a visitor's explicit theme choice.
+  const themeToggle = qs("#theme-toggle");
+  const themeIcon = qs(".theme-toggle-icon", themeToggle || document);
+  const themeLabel = qs(".theme-toggle-label", themeToggle || document);
+  let savedTheme = "dark";
+  try {
+    const storedTheme = window.localStorage.getItem("portfolio-theme");
+    if (storedTheme === "light" || storedTheme === "dark") savedTheme = storedTheme;
+  } catch (_) {
+    // Storage may be unavailable in private browsing; the default still works.
+  }
+
+  function applyTheme(theme) {
+    const isLight = theme === "light";
+    document.documentElement.dataset.theme = isLight ? "light" : "dark";
+    document.documentElement.style.colorScheme = isLight ? "light" : "dark";
+    if (themeToggle) {
+      themeToggle.setAttribute("aria-pressed", String(isLight));
+      themeToggle.setAttribute("aria-label", isLight ? "Switch to dark theme" : "Switch to light theme");
+    }
+    if (themeIcon) themeIcon.textContent = isLight ? "☾" : "☀";
+    if (themeLabel) themeLabel.textContent = isLight ? "Dark mode" : "Light mode";
+  }
+
+  applyTheme(savedTheme);
+  if (themeToggle) {
+    themeToggle.addEventListener("click", () => {
+      const nextTheme = document.documentElement.dataset.theme === "light" ? "dark" : "light";
+      applyTheme(nextTheme);
+      try {
+        window.localStorage.setItem("portfolio-theme", nextTheme);
+      } catch (_) {
+        // Theme switching remains functional without persistence.
+      }
+    });
+  }
+
   // The JSON file is the content source of truth. The existing HTML remains
   // as a stable visual shell so the design does not depend on a framework.
   let career;
