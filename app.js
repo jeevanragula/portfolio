@@ -38,6 +38,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     renderProducts(data.products);
     renderPatents(data.patents);
     renderSkills(data.skills);
+    renderProjects(data.projects || []);
+    renderCertifications(data.certifications || []);
     renderCareerTimeline(data.career);
 
     setText(".contact-title", data.contact.title);
@@ -93,7 +95,31 @@ document.addEventListener("DOMContentLoaded", async () => {
       setText(".patent-number", patent.number, item);
       setText(".patent-name", patent.name, item);
       setText(".patent-desc", patent.description, item);
+      const heading = qs(".patent-name", item);
+      if (heading && patent.url) {
+        heading.innerHTML = '<a href="' + escapeHtml(patent.url) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(patent.name) + '</a>';
+      }
     });
+  }
+
+  function renderProjects(projects) {
+    const grid = qs("#projects-grid");
+    if (!grid || !projects.length) return;
+    grid.innerHTML = projects.map(project =>
+      '<article class="project-card glass-panel" id="' + escapeHtml(project.id) + '">' +
+      '<span class="project-period">' + escapeHtml(project.period) + '</span>' +
+      '<h3>' + escapeHtml(project.title) + '</h3>' +
+      '<p><strong>' + escapeHtml(project.company) + '</strong> · ' + escapeHtml(project.description) + '</p>' +
+      '<div class="project-tags">' + project.tags.map(tag => '<span>' + escapeHtml(tag) + '</span>').join("") + '</div></article>'
+    ).join("");
+  }
+
+  function renderCertifications(certifications) {
+    const grid = qs("#certifications-grid");
+    if (!grid || !certifications.length) return;
+    grid.innerHTML = certifications.map(cert =>
+      '<article class="certification-card glass-panel"><span class="certification-issuer">' + escapeHtml(cert.issuer) + (cert.year ? ' · ' + escapeHtml(cert.year) : '') + '</span><h3>' + escapeHtml(cert.name) + '</h3></article>'
+    ).join("");
   }
 
   function renderSkills(categories) {
