@@ -5,8 +5,8 @@
     "company": "Zscaler",
     "location": "Hyderabad, India",
     "experience": "19 years",
-    "headline": "Architecting the Future of Cloud Security",
-    "description": "With 19 years of software engineering experience, I architect cloud-native security platforms, distributed systems and AI security capabilities. At Zscaler, my work spans Posture Control (CNAPP), DSPM, infrastructure-as-code security, and AI asset management. I combine hands-on Go engineering with Kubernetes, multi-cloud architecture, event-driven systems and data platforms.",
+    "headline": "Architecting AI Security & Cloud-Native Platforms",
+    "description": "With 19 years of software engineering experience, I architect and build AI security and cloud-native security platforms at scale. At Zscaler, my work includes AI Security and Data Security Posture Management (DSPM), alongside cloud security capabilities such as Zscaler Posture Control. I combine hands-on Go engineering with Kubernetes, multi-cloud architecture, distributed data platforms, event-driven systems, and AI-native architectures.",
     "email": "jeevanragula@gmail.com",
     "linkedin": "https://www.linkedin.com/in/jeevanragula",
     "github": "https://github.com/jeevanragula",
@@ -335,58 +335,30 @@
       "url": "https://www.credly.com/users/jeevanragula/badges/credly"
     },
     {
-      "name": "Oracle Cloud Infrastructure 2023 Certified Architect Associate",
+      "name": "Oracle Cloud Infrastructure Certified DevOps Professional",
       "issuer": "Oracle",
       "year": "2023"
     },
     {
-      "name": "Oracle Cloud Infrastructure 2023 Certified DevOps Professional",
+      "name": "Oracle Cloud Infrastructure Certified Architect Associate",
       "issuer": "Oracle",
       "year": "2023"
+    },
+    {
+      "name": "Redis University Certification",
+      "issuer": "Redis University",
+      "year": "",
+      "url": "https://www.credential.net/profile/jeevanragula/wallet"
+    },
+    {
+      "name": "Distributed SQL Fundamentals",
+      "issuer": "YugabyteDB",
+      "year": "",
+      "url": "https://www.credential.net/profile/jeevanragula/wallet"
     },
     {
       "name": "Neo4j Certified Professional",
       "issuer": "Neo4j",
-      "year": ""
-    },
-    {
-      "name": "Docker for Java Developers",
-      "issuer": "LinkedIn Learning",
-      "year": "2021"
-    },
-    {
-      "name": "Big Data Computing",
-      "issuer": "NPTEL",
-      "year": "2020"
-    },
-    {
-      "name": "Learning Hadoop",
-      "issuer": "LinkedIn Learning",
-      "year": "2020"
-    },
-    {
-      "name": "Elasticsearch Essential Training",
-      "issuer": "LinkedIn Learning",
-      "year": "2019"
-    },
-    {
-      "name": "Spring: Spring Cloud",
-      "issuer": "LinkedIn Learning",
-      "year": "2019"
-    },
-    {
-      "name": "Kafka Essential Training",
-      "issuer": "LinkedIn Learning",
-      "year": "2019"
-    },
-    {
-      "name": "Sun Certified Java Programmer",
-      "issuer": "Oracle",
-      "year": "2008"
-    },
-    {
-      "name": "Angular",
-      "issuer": "LinkedIn Learning",
       "year": ""
     }
   ],
@@ -404,21 +376,6 @@
         "Prometheus",
         "Grafana",
         "FedRAMP"
-      ]
-    },
-    {
-      "id": "project-ivy",
-      "company": "IVY Software Development Services",
-      "period": "Jul 2010 – Jul 2019",
-      "title": "PCI DSS Payment Gateway for GVC / Entain",
-      "description": "Designed and built a PCI DSS payment gateway using Spring, Apache CXF, Tomcat and Oracle, integrating roughly 20 payment methods through REST and SOAP. Also delivered cashier performance improvements, transaction migrations, distributed caching, ELK logging, Quick Deposit and asynchronous email/SMS alerts; addressed XSS and CSRF risks.",
-      "tags": [
-        "PCI DSS",
-        "Java",
-        "Spring",
-        "REST / SOAP",
-        "Oracle",
-        "ELK"
       ]
     },
     {
