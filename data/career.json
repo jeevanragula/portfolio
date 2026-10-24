@@ -334,12 +334,14 @@
     {
       "name": "Kubernetes and Cloud Native Associate (KCNA)",
       "issuer": "The Linux Foundation / CNCF",
-      "year": ""
+      "year": "",
+      "url": "https://www.credly.com/badges/2b9a0b24-ad9e-4423-b778-4e1ad424b4cd/public_url"
     },
     {
       "name": "Kubernetes and Cloud Native Security Associate (KCSA)",
       "issuer": "The Linux Foundation / CNCF",
-      "year": ""
+      "year": "",
+      "url": "https://www.credly.com/badges/fba674c1-2020-49ca-adee-2990e6f7590a"
     },
     {
       "name": "Oracle Cloud Infrastructure Certified DevOps Professional",
