@@ -307,12 +307,20 @@
   },
   "terminal": {
     "commands": {
-      "help": "Available: help, bio, skills, products, patents, contact, clear",
+      "help": "Available: help, whoami, bio, skills, products, projects, experience, patents, certifications, education, resume, github, linkedin, contact, ls, clear",
       "bio": "Jeevan Reddy Ragula — Principal Cloud-Native & AI Security Architect. Cloud security, distributed systems, Kubernetes, Go and AI security.",
       "skills": "Go · Kubernetes · AWS · Azure · GCP · Kafka · PostgreSQL · MongoDB · ClickHouse · Spark · Databricks",
       "products": "AI Security / AI Asset Management · DSPM · Zscaler Posture Control",
       "patents": "U.S. Patent 12,598,208 · Pub. No. 20250202926",
-      "contact": "Hyderabad, India · LinkedIn: linkedin.com/in/jeevanragula"
+      "contact": "Hyderabad, India · LinkedIn: linkedin.com/in/jeevanragula",
+      "whoami": "Jeevan Reddy Ragula — Principal Cloud-Native & AI Security Architect @ Zscaler",
+      "github": "https://github.com/jeevanragula",
+      "linkedin": "https://www.linkedin.com/in/jeevanragula/",
+      "resume": "Use the resume command to download resume.pdf.",
+      "projects": "Use projects to explore AI Security, DSPM, Cloud Posture & IaC Security, Payment Gateway, and Cloud Connector projects.",
+      "experience": "Use experience to browse the full career timeline.",
+      "certifications": "Use certifications to list Kubernetes and Oracle Cloud certifications.",
+      "education": "B.Tech, Electronics & Communication Engineering — JNTU Hyderabad (2003–2007)."
     }
   },
   "certifications": [
