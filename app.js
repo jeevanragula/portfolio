@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     document.title = `${profile.name} | ${profile.title}`;
     const logo = qs(".nav-logo");
-    if (logo) logo.innerHTML = '<span class="logo-accent">&lt;</span>' + escapeHtml(profile.name) + '<span class="logo-accent">/&gt;</span>';
+    if (logo) logo.textContent = profile.name;
 
     setText(".status-text", `${profile.title} @ ${profile.company}`);
     setText(".hero-title", "");
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     if (githubProfile) githubProfile.href = profile.github;
 
     const footerLogo = qs(".footer-logo");
-    if (footerLogo) footerLogo.innerHTML = '<span class="logo-accent">&lt;</span>' + escapeHtml(profile.name) + '<span class="logo-accent">/&gt;</span>';
+    if (footerLogo) footerLogo.textContent = profile.name;
 
     const footerCopyright = qs(".footer-copyright p");
     if (footerCopyright) footerCopyright.textContent = `© 2026 ${profile.name}. All rights reserved. Architected with raw HTML, CSS, and JS.`;
@@ -113,7 +113,11 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 
   function renderCareerTimeline(entries) {
+    // Keep the timeline data-driven and prevent stale/duplicated rendering.
+    const seen = new Set();
     entries.forEach(([id, date, title, company, details]) => {
+      if (seen.has(id)) return;
+      seen.add(id);
       const item = document.getElementById(id);
       if (!item) return;
       setText(".timeline-date", date, item);
