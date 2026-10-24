@@ -300,7 +300,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         addLine("  certifications, education, resume, github, linkedin, contact, ls, clear");
         addLine("Tip: use ↑ / ↓ to browse command history.");
       },
-      whoami: () => addLine((profile.name || "Jeevan Reddy Ragula") + " — " + (profile.title || "Cloud-Native & AI Security Architect") + " @ " + (profile.company || "Zscaler")),
+      whoami: () => addLine((profile.name || "Jeevan Reddy Ragula") + " — " + (profile.title || "Technical Architect") + " @ " + (profile.company || "Zscaler")),
       bio: () => addLine(profile.description || commands.bio || "Profile details are unavailable."),
       skills: () => addLine(commands.skills || "Skills information is unavailable."),
       products: () => {
@@ -334,7 +334,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const initialReply = output.querySelector(".output-line.reply");
     if (initialReply) {
       initialReply.textContent = (profile.name || "Jeevan Reddy Ragula") + " — " +
-        (profile.title || "Principal Cloud-Native & AI Security Architect") + " based in " +
+        (profile.title || "Technical Architect") + " based in " +
         (profile.location || "Hyderabad, India") + ". Explore the portfolio with 'help'.";
     }
 
