@@ -171,3 +171,8 @@ body{padding-top:65px}
 
 /* Align the right edge of Contact Me with the hero content's right edge */
 @media(min-width:901px){.nav-container{padding-right:0}}
+
+
+/* Keep the footer name readable against the dark theme */
+.footer-logo{display:inline-block;color:var(--text);text-decoration:none;font-weight:600}
+.footer-logo:hover{color:var(--cyan)}
