@@ -147,7 +147,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       '<span class="project-period">' + escapeHtml(project.period) + '</span>' +
       '<h3>' + escapeHtml(project.title) + '</h3>' +
       '<p><strong>' + escapeHtml(project.company) + '</strong> · ' + escapeHtml(project.description) + '</p>' +
-      '<div class="project-tags">' + project.tags.map(tag => '<span>' + escapeHtml(tag) + '</span>').join("") + '</div></article>'
+      '<div class="project-tags">' + project.tags.map(tag => '<span>' + escapeHtml(tag) + '</span>').join("") + '</div>' + (project.url ? '<a class="certification-link" href="' + escapeHtml(project.url) + '" target="_blank" rel="noopener noreferrer">View project ↗</a>' : '') + '</article>'
     ).join("");
   }
 
