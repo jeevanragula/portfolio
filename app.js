@@ -252,7 +252,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       const arg = String(argument || "").toLowerCase();
       if (arg === "next") experiencePage = Math.min(totalPages - 1, experiencePage + 1);
       else if (arg === "prev" || arg === "previous") experiencePage = Math.max(0, experiencePage - 1);
-      else if (arg && /^\\d+$/.test(arg)) experiencePage = Math.max(0, Math.min(totalPages - 1, Number(arg) - 1));
+      else if (arg && /^\d+$/.test(arg)) experiencePage = Math.max(0, Math.min(totalPages - 1, Number(arg) - 1));
       else if (!arg) experiencePage = 0;
 
       // Replace the previous experience page so paging never floods the terminal.
@@ -366,7 +366,8 @@ document.addEventListener("DOMContentLoaded", async () => {
       line.appendChild(document.createTextNode(" " + raw));
       output.appendChild(line);
 
-      const args = raw.split(/\\s+/).slice(1);\n      if (handlers[command]) handlers[command](args);
+      const args = raw.split(/\s+/).slice(1);
+      if (handlers[command]) handlers[command](args);
       else if (commands[command]) addLine(commands[command]);
       else addLine('Command not found: "' + command + '". Type "help" to see available commands.');
 
