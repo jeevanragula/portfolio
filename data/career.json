@@ -388,7 +388,7 @@
       "company": "IVY Comptech / GVC",
       "period": "2010–2019",
       "title": "Enterprise Payment Gateway",
-      "description": "Contributed to a PCI DSS-certified payment gateway and cashier platform, integrating approximately 20 payment methods through REST and SOAP and supporting deposits and transaction processing for a large online gaming business.",
+      "description": "Contributed to a PCI DSS-certified payment gateway and cashier platform, integrating approximately 20 payment methods through REST and SOAP; improved cashier page load to about two seconds.",
       "tags": [
         "PCI DSS",
         "Java / Spring",
