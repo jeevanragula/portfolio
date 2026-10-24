@@ -319,7 +319,7 @@
       "resume": "Use the resume command to download resume.pdf.",
       "projects": "Use projects to explore AI Security, DSPM, Cloud Posture & IaC Security, Payment Gateway, and Cloud Connector projects.",
       "experience": "Use experience to browse the full career timeline.",
-      "certifications": "Use certifications to list Kubernetes and Oracle Cloud certifications.",
+      "certifications": "CKA · CKAD · KCNA · KCSA · Oracle Cloud Infrastructure DevOps Professional · Oracle Cloud Infrastructure Architect Associate",
       "education": "B.Tech, Electronics & Communication Engineering — JNTU Hyderabad (2003–2007)."
     }
   },
@@ -328,6 +328,12 @@
       "name": "Certified Kubernetes Administrator (CKA)",
       "issuer": "The Linux Foundation / CNCF",
       "year": ""
+    },
+    {
+      "name": "Certified Kubernetes Application Developer (CKAD)",
+      "issuer": "The Linux Foundation / CNCF",
+      "year": "",
+      "url": "https://www.credly.com/earner/earned/badge/00674d8b-c590-4e8c-8727-28b2913d73c7"
     },
     {
       "name": "Kubernetes and Cloud Native Associate (KCNA)",
