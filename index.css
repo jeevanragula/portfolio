@@ -152,3 +152,8 @@ html,body{max-width:100%;overflow-x:hidden}.nav-logo{max-width:calc(100vw - 85px
   .nav-logo{font-size:18px}
   .hero-title{font-size:30px;line-height:1.2;letter-spacing:-.5px}
 }
+
+
+/* Center the copyright line for a balanced footer */
+.footer-copyright{text-align:center;max-width:1180px;margin:24px auto 0;padding-top:18px;border-top:1px solid var(--border)}
+.footer-copyright p{margin:0}
