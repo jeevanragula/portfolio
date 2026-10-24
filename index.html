@@ -46,7 +46,6 @@
             <nav class="nav-menu" id="nav-menu">
                 <a href="#hero" class="nav-link active" id="link-hero">Home</a>
                 <a href="#products" class="nav-link" id="link-products">Products</a>
-                <a href="#case-studies" class="nav-link" id="link-case-studies">Case Studies</a>
                 <a href="#patents" class="nav-link" id="link-patents">Patents</a>
                 <a href="#projects" class="nav-link" id="link-projects">Projects</a>
                 <a href="#certifications" class="nav-link" id="link-certifications">Certifications</a>
@@ -139,6 +138,13 @@
                         <li><span class="check-icon">✓</span> AWS, Azure, GCP and GitHub integrations</li>
                         <li><span class="check-icon">✓</span> Go, Kubernetes, Kafka and Redis-based services</li>
                     </ul>
+                    <div class="product-architecture">
+                        <h4>Architecture at a glance</h4>
+                        <div class="product-flow" role="img" aria-label="Conceptual AI Security flow from model and agent sources to normalization, metadata enrichment, provenance and risk signals">
+                            <span>Model &amp; agent sources</span><b aria-hidden="true">→</b><span>Normalize &amp; enrich</span><b aria-hidden="true">→</b><span>Provenance + risk</span><b aria-hidden="true">→</b><span>AI inventory</span>
+                        </div>
+                        <p><strong>Key trade-off:</strong> Normalize metadata for cross-source comparison while preserving source-specific fields and provenance; broader enrichment can increase latency and rate-limit pressure.</p>
+                    </div>
                 </div>
                 <div class="product-card glass-panel" id="prod-dspm">
                     <div class="product-icon-wrap bg-violet">
@@ -159,6 +165,13 @@
                         <li><span class="check-icon">✓</span> DLP integration and scan-result processing</li>
                         <li><span class="check-icon">✓</span> Multi-tenant cloud-scale orchestration</li>
                     </ul>
+                    <div class="product-architecture">
+                        <h4>Architecture at a glance</h4>
+                        <div class="product-flow" role="img" aria-label="Conceptual DSPM flow from cloud data sources to discovery and scan orchestration, distributed workers, findings and DLP processing">
+                            <span>Cloud data</span><b aria-hidden="true">→</b><span>Discovery &amp; orchestration</span><b aria-hidden="true">→</b><span>Scan workers</span><b aria-hidden="true">→</b><span>Findings + DLP</span>
+                        </div>
+                        <p><strong>Key trade-off:</strong> Parallelism improves scan throughput, while bounded concurrency and tenant-aware controls help protect isolation and source systems.</p>
+                    </div>
                 </div>
 
                 <div class="product-card glass-panel" id="prod-zpc">
@@ -201,106 +214,6 @@
                 </div>
 
             </div></div>
-        </section>
-
-        <!-- Public-safe architecture case studies -->
-        <section id="case-studies" class="section-container">
-            <div class="section-header">
-                <span class="section-subtitle">ARCHITECTURE IN PRACTICE</span>
-                <h2 class="section-title">Architecture Case Studies</h2>
-                <div class="title-underline"></div>
-                <p class="section-intro">Public-safe, conceptual views of the problems, system boundaries and engineering trade-offs. These are not internal deployment diagrams or complete implementation specifications.</p>
-            </div>
-
-            <div class="case-study-grid">
-                <article class="case-study-card glass-panel" id="case-study-dspm">
-                    <div class="case-study-kicker">CASE STUDY 01 · DATA SECURITY</div>
-                    <h3>Designing distributed DSPM scanning workflows</h3>
-                    <div class="case-study-block">
-                        <h4>Problem</h4>
-                        <p>Discover and classify sensitive data across cloud storage and databases while coordinating distributed scans, processing DLP findings and maintaining tenant boundaries.</p>
-                    </div>
-                    <div class="case-study-block">
-                        <h4>Conceptual architecture</h4>
-                        <div class="architecture-flow" role="img" aria-label="Conceptual DSPM flow from cloud data sources to discovery and scan orchestration, distributed scanning, findings processing, DLP correlation, and tenant-scoped results">
-                            <div class="architecture-node">Cloud storage<br>and databases</div>
-                            <span class="architecture-arrow" aria-hidden="true">→</span>
-                            <div class="architecture-node">Discovery and<br>scan orchestration</div>
-                            <span class="architecture-arrow" aria-hidden="true">→</span>
-                            <div class="architecture-node">Distributed<br>scan workers</div>
-                            <span class="architecture-arrow" aria-hidden="true">→</span>
-                            <div class="architecture-node">Findings and<br>DLP processing</div>
-                            <span class="architecture-arrow" aria-hidden="true">→</span>
-                            <div class="architecture-node">Tenant-scoped<br>results</div>
-                        </div>
-                        <p class="diagram-note">Simplified logical flow; component names and boundaries are illustrative.</p>
-                    </div>
-                    <div class="case-study-block">
-                        <h4>Design trade-offs</h4>
-                        <ul>
-                            <li><strong>Throughput vs. isolation:</strong> parallel scan execution improves work distribution, but needs bounded concurrency and tenant-aware resource controls.</li>
-                            <li><strong>Freshness vs. cost:</strong> repeated discovery improves visibility but can increase source API calls and scan load; incremental or snapshot-aware work can reduce unnecessary rescanning.</li>
-                            <li><strong>Detection depth vs. latency:</strong> richer classification and DLP correlation provide context but add processing stages and operational complexity.</li>
-                        </ul>
-                    </div>
-                    <div class="case-study-block">
-                        <h4>Outcome and evidence</h4>
-                        <p>The work described in my portfolio covers distributed scan execution, data discovery and classification, DLP integration, and findings processing in a multi-tenant security platform. I am not publishing internal scale or performance figures here.</p>
-                    </div>
-                </article>
-
-                <article class="case-study-card glass-panel" id="case-study-ai-security">
-                    <div class="case-study-kicker">CASE STUDY 02 · AI SECURITY</div>
-                    <h3>Building an AI asset intelligence pipeline</h3>
-                    <div class="case-study-block">
-                        <h4>Problem</h4>
-                        <p>AI assets are spread across model registries, cloud providers and developer ecosystems. Security teams need a more consistent inventory, useful model metadata and provenance, and risk signals they can compare.</p>
-                    </div>
-                    <div class="case-study-block">
-                        <h4>Conceptual architecture</h4>
-                        <div class="architecture-flow" role="img" aria-label="Conceptual AI security flow from model and agent sources through source adapters and normalization, metadata enrichment, provenance and risk assessment, to a consolidated inventory">
-                            <div class="architecture-node">Model and agent<br>sources</div>
-                            <span class="architecture-arrow" aria-hidden="true">→</span>
-                            <div class="architecture-node">Source adapters<br>and normalization</div>
-                            <span class="architecture-arrow" aria-hidden="true">→</span>
-                            <div class="architecture-node">Metadata<br>enrichment</div>
-                            <span class="architecture-arrow" aria-hidden="true">→</span>
-                            <div class="architecture-node">Provenance and<br>risk assessment</div>
-                            <span class="architecture-arrow" aria-hidden="true">→</span>
-                            <div class="architecture-node">Consolidated<br>AI inventory</div>
-                        </div>
-                        <p class="diagram-note">Illustrative data flow across sources such as AWS, Azure, GCP, Hugging Face and Ollama; not an internal production topology.</p>
-                    </div>
-                    <div class="case-study-block">
-                        <h4>Design trade-offs</h4>
-                        <ul>
-                            <li><strong>Common schema vs. source fidelity:</strong> normalize cross-provider metadata for comparison while retaining source-specific fields and provenance.</li>
-                            <li><strong>Coverage vs. freshness:</strong> broad catalog ingestion increases coverage, while live enrichment can add latency and rate-limit pressure.</li>
-                            <li><strong>Risk score vs. explainability:</strong> a score is easier to sort on, but should retain source evidence, component signals and timestamps so reviewers can understand it.</li>
-                        </ul>
-                    </div>
-                    <div class="case-study-block">
-                        <h4>Outcome and evidence</h4>
-                        <p>The platform direction combines model and agent inventory, metadata enrichment, provenance and supply-chain risk signals across multiple sources. This initiative is evolving, so I have not claimed a production asset count or risk-detection rate.</p>
-                    </div>
-                </article>
-            </div>
-
-            <div class="evidence-panel glass-panel">
-                <div>
-                    <span class="case-study-kicker">VERIFIABLE ENGINEERING EVIDENCE</span>
-                    <h3>Selected work and artifacts</h3>
-                    <p>Links to public artifacts that substantiate contributions without exposing employer-confidential implementation details.</p>
-                </div>
-                <div class="evidence-links">
-                    <a href="https://github.com/kedacore/keda/pull/4953" target="_blank" rel="noopener noreferrer"><strong>KEDA PR #4953</strong><span>Merged AWS SDK v2 migration and scaler updates ↗</span></a>
-                    <a href="https://patents.justia.com/patent/12598208" target="_blank" rel="noopener noreferrer"><strong>U.S. Patent 12,598,208</strong><span>Granted IaC component-security scanner ↗</span></a>
-                    <a href="https://patents.justia.com/patent/20250202926" target="_blank" rel="noopener noreferrer"><strong>DSPM patent application</strong><span>Published application 20250202926 ↗</span></a>
-                    <a href="https://github.com/jeevanragula/manvasa" target="_blank" rel="noopener noreferrer"><strong>Manvasa repository</strong><span>Independent SaaS product and implementation ↗</span></a>
-                    <a href="#iac-simulator"><strong>Interactive IaC scanner demo</strong><span>Run a public-safe policy simulation ↗</span></a>
-                    <a href="https://jeevanragula.github.io/#publications" target="_blank" rel="noopener noreferrer"><strong>Talks and publications</strong><span>Selected community material ↗</span></a>
-                </div>
-            </div>
         </section>
 
         <!-- Patents Section & Interactive IaC Simulator -->
