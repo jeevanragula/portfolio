@@ -72,3 +72,14 @@ html,body{max-width:100%;overflow-x:hidden}.nav-logo{max-width:calc(100vw - 85px
 .form-status-success{color:#86efac}
 .form-status-error{color:#fca5a5}
 #btn-submit:disabled{opacity:.65;cursor:wait}
+
+
+/* Open Source Spotlight: keep link cards readable in all link states */
+.github-card,.github-card:visited{display:block;color:var(--text);text-decoration:none}
+.github-card .repo-name{color:var(--text)}
+.github-card .repo-desc{color:var(--muted)}
+.github-card .repo-meta,.github-card .repo-lang{color:#cbd5e1}
+.github-card .repo-badge{color:var(--cyan);border-color:rgba(0,229,255,.28)}
+.github-card .repo-icon{color:var(--cyan);flex:0 0 24px}
+.github-card:hover .repo-name{color:var(--cyan)}
+.github-card:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
