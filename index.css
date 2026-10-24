@@ -423,3 +423,10 @@ html[data-theme="dark"] .social-channels a[aria-label="Twitter / X"] .social-ico
 .skill-bar-bg{display:none!important}
 #btn-resume{border-color:rgba(0,229,255,.4)}
 html[data-theme="light"] .skill-val{color:#526176}
+
+
+/* Evidence-led skill descriptors replace subjective rating bars */
+.skill-val{font-size:11px;font-weight:500;line-height:1.4;text-align:right;max-width:62%;color:var(--muted)}
+.skill-bar-bg{display:none!important}
+#btn-resume{border-color:rgba(0,229,255,.4)}
+html[data-theme="light"] .skill-val{color:#526176}
