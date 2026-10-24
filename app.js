@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     if (footerLogo) footerLogo.textContent = profile.name;
 
     const footerCopyright = qs(".footer-copyright p");
-    if (footerCopyright) footerCopyright.textContent = `© 2026 ${profile.name}. All rights reserved. Architected with raw HTML, CSS, and JS.`;
+    if (footerCopyright) footerCopyright.textContent = `© 2026 ${profile.name}. All rights reserved.`;
 
     initTerminal(data.terminal.commands);
   }
@@ -229,7 +229,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       const mailto = `mailto:jeevanragula@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
       window.location.href = mailto;
       const status = document.getElementById("form-status");
-      if (status) status.textContent = "Your email app should open with the message filled in. Review it and press Send to deliver.";
+      if (status) status.textContent = "This form opens your email app with a prefilled draft. Review it and press Send to deliver; the website does not send email directly.";
     });
   }
 
