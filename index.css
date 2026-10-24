@@ -65,3 +65,10 @@ html,body{max-width:100%;overflow-x:hidden}.nav-logo{max-width:calc(100vw - 85px
 .social-btn{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;transition:background .2s ease,border-color .2s ease}
 .social-icon{stroke:currentColor}
 @media(max-width:600px){#contact .btn-submit{width:auto;max-width:180px}}
+
+
+/* Contact form submission states */
+.form-status{min-height:1.4em;margin:0 0 16px;color:#cbd5e1;font-size:13px;line-height:1.5}
+.form-status-success{color:#86efac}
+.form-status-error{color:#fca5a5}
+#btn-submit:disabled{opacity:.65;cursor:wait}
