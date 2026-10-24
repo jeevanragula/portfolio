@@ -49,3 +49,19 @@ html,body{max-width:100%;overflow-x:hidden}.nav-logo{max-width:calc(100vw - 85px
 .btn-submit{width:100%;gap:10px}
 .form-note{color:#cbd5e1;font-size:13px;margin:0 0 14px;overflow-wrap:anywhere}
 @media(max-width:900px){.contact-layout{grid-template-columns:minmax(0,1fr)}.contact-info,.contact-form-panel{height:auto}}
+
+
+/* Final contact polish */
+.contact-section-label{display:block;line-height:1.2;margin:0 0 10px;white-space:normal}
+#contact .section-header{margin-bottom:36px}
+#contact .btn-submit{width:auto;min-width:130px;max-width:180px;padding:10px 18px;min-height:42px;font-size:14px;gap:8px}
+#contact .submit-svg{width:17px;height:17px;flex:0 0 17px}
+#contact .social-btn[aria-label="LinkedIn"]{color:#0a66c2;border-color:rgba(10,102,194,.45)}
+#contact .social-btn[aria-label="LinkedIn"]:hover{background:rgba(10,102,194,.12);border-color:#0a66c2}
+#contact .social-btn[aria-label="GitHub"]{color:#f0f6fc;border-color:rgba(240,246,252,.35)}
+#contact .social-btn[aria-label="GitHub"]:hover{background:rgba(240,246,252,.1);border-color:#f0f6fc}
+#contact .social-btn[aria-label="Twitter / X"]{color:#e7e9ea;border-color:rgba(231,233,234,.35)}
+#contact .social-btn[aria-label="Twitter / X"]:hover{background:rgba(231,233,234,.1);border-color:#e7e9ea}
+.social-btn{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;transition:background .2s ease,border-color .2s ease}
+.social-icon{stroke:currentColor}
+@media(max-width:600px){#contact .btn-submit{width:auto;max-width:180px}}
