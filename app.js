@@ -211,14 +211,21 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
   }
 
-  // Contact form stays client-side by design; it provides visual feedback only.
+  // Opens a prefilled email draft; static GitHub Pages cannot send mail by itself.
   const form = document.getElementById("contact-form");
   const success = document.getElementById("form-success");
   if (form && success) {
     form.addEventListener("submit", event => {
       event.preventDefault();
-      form.style.display = "none";
-      success.classList.add("show");
+      const name = document.getElementById("frm-name")?.value.trim() || "";
+      const email = document.getElementById("frm-email")?.value.trim() || "";
+      const subject = document.getElementById("frm-subject")?.value.trim() || "Portfolio enquiry";
+      const message = document.getElementById("frm-message")?.value.trim() || "";
+      const body = `Name: ${name}\nEmail: ${email}\n\n${message}`;
+      const mailto = `mailto:jeevanragula@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.location.href = mailto;
+      const status = document.getElementById("form-status");
+      if (status) status.textContent = "Your email app should open with the message filled in. Review it and press Send to deliver.";
     });
   }
 
