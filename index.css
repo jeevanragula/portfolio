@@ -168,3 +168,6 @@ body{padding-top:65px}
 
 /* Align the desktop brand name with the hero headline's left edge */
 @media(min-width:901px){.nav-container{padding-left:0}}
+
+/* Align the right edge of Contact Me with the hero content's right edge */
+@media(min-width:901px){.nav-container{padding-right:0}}
