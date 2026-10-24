@@ -115,7 +115,7 @@
     },
     {
       "id": "skill-cat-2",
-      "category": "Cloud, Platform & Security",
+      "category": "Cloud & Platform Engineering",
       "items": [
         [
           "Kubernetes / EKS",
@@ -136,22 +136,16 @@
           "bg-green"
         ],
         [
-          "Docker / Helm / GitOps",
+          "Docker / Helm / Kustomize",
           "Advanced",
           90,
           "bg-cyan"
         ],
         [
-          "CNAPP / CSPM / DSPM",
-          "Expert",
-          94,
-          "bg-violet"
-        ],
-        [
-          "IaC Security / DevSecOps",
+          "FluxCD / GitOps / CI/CD",
           "Advanced",
-          90,
-          "bg-green"
+          88,
+          "bg-violet"
         ]
       ]
     },
@@ -172,7 +166,7 @@
           "bg-violet"
         ],
         [
-          "MongoDB / ClickHouse",
+          "MongoDB / ClickHouse / Redis",
           "Advanced",
           88,
           "bg-green"
@@ -186,7 +180,43 @@
         [
           "Iceberg / Delta Lake / Trino",
           "Working knowledge",
-          78,
+          80,
+          "bg-violet"
+        ]
+      ]
+    },
+    {
+      "id": "skill-cat-4",
+      "category": "Security & AI Platforms",
+      "items": [
+        [
+          "CNAPP / CSPM / DSPM",
+          "Expert",
+          94,
+          "bg-cyan"
+        ],
+        [
+          "IaC Security / Policy Engines",
+          "Advanced",
+          90,
+          "bg-violet"
+        ],
+        [
+          "DLP / CloudTrail / Security Telemetry",
+          "Advanced",
+          88,
+          "bg-green"
+        ],
+        [
+          "AI Asset & Model Intelligence",
+          "Advanced",
+          88,
+          "bg-cyan"
+        ],
+        [
+          "Model Supply-Chain Risk / MCP Ecosystems",
+          "Working knowledge",
+          82,
           "bg-violet"
         ]
       ]
