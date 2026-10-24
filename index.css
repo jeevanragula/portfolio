@@ -134,3 +134,21 @@ html,body{max-width:100%;overflow-x:hidden}.nav-logo{max-width:calc(100vw - 85px
 .community-links a{font-size:13px}
 @media(max-width:900px){.community-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:600px){.community-grid{grid-template-columns:1fr}}
+
+/* Final typography alignment requested for desktop navigation and hero */
+@media(min-width:901px){
+  .nav-container{max-width:1180px;padding-left:24px;padding-right:24px;justify-content:flex-start;gap:22px}
+  .nav-logo{font-size:28px;line-height:1.1;letter-spacing:-.7px;margin-right:12px;white-space:nowrap}
+  .nav-menu{margin-left:auto;gap:3px}
+  .nav-link{font-size:14px;padding:8px 8px;white-space:nowrap}
+  .hero-title{font-size:30px;line-height:1.2;letter-spacing:-.5px}
+}
+@media(min-width:701px) and (max-width:900px){
+  .nav-logo{font-size:24px}
+  .nav-link{font-size:14px}
+  .hero-title{font-size:30px;line-height:1.2;letter-spacing:-.5px}
+}
+@media(max-width:700px){
+  .nav-logo{font-size:18px}
+  .hero-title{font-size:30px;line-height:1.2;letter-spacing:-.5px}
+}
