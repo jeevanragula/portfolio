@@ -1,12 +1,12 @@
 {
   "profile": {
     "name": "Jeevan Reddy Ragula",
-    "title": "Architect",
+    "title": "Cloud Security & AI Architect",
     "company": "Zscaler",
     "location": "Hyderabad, India",
     "experience": "19 years",
     "headline": "Architecting the Future of Cloud Security",
-    "description": "With 19 years of software engineering experience, I specialize in designing and scaling cloud-native security platforms and distributed systems. At Zscaler, I have been a core engineer and architect across Zscaler Posture Control (ZPC), DSPM, and AI Security initiatives. My work spans Go, Kubernetes, AWS, distributed data platforms, event-driven systems, and AI-native architectures.",
+    "description": "With 19 years of software engineering experience, I architect cloud-native security platforms, distributed systems and AI security capabilities. At Zscaler, my work spans Posture Control (CNAPP), DSPM, infrastructure-as-code security, and AI asset management. I combine hands-on Go engineering with Kubernetes, multi-cloud architecture, event-driven systems and data platforms.",
     "email": "jeevanragula@gmail.com",
     "linkedin": "https://www.linkedin.com/in/jeevanragula",
     "github": "https://github.com/jeevanragula",
@@ -31,12 +31,12 @@
       "badge": "AI Security",
       "title": "AI Security / AI Asset Management",
       "icon": "ai",
-      "description": "Architecting an AI security platform that brings together AI models, agents, MCP servers, workloads, AI identities and related assets across cloud and developer environments, with AI-native integrations and security workflows.",
+      "description": "Architecting an AI security and asset-management platform that inventories AI models, agents, MCP servers, workloads and AI identities across cloud and developer ecosystems. Work includes source aggregation, model intelligence, supply-chain risk signals and integrations across AWS, Azure, GCP, Hugging Face and Ollama.",
       "features": [
-        "AI model, agent and workload inventory",
-        "MCP and agent-oriented architecture",
-        "AWS, Azure, GCP and GitHub integrations",
-        "Go, Kubernetes, Kafka and Redis-based services"
+        "AI model, agent, MCP server and workload inventory",
+        "Model metadata, provenance and supply-chain risk intelligence",
+        "AWS, Azure, GCP, Hugging Face and Ollama sources",
+        "Go services, PostgreSQL, Kubernetes and event-driven integrations"
       ]
     },
     {
@@ -69,15 +69,17 @@
   "patents": [
     {
       "id": "pat-1",
-      "number": "U.S. Patent 12,598,208",
+      "number": "U.S. Patent 12,598,208 · Granted Apr 7, 2026",
       "name": "Infrastructure as Code (IaC) Scanner for Component Security",
-      "description": "A specialized scanning architecture that parses, compiles, and evaluates compliance and security policies against IaC blueprints (Terraform, CloudFormation) before deployment, shifting security left."
+      "description": "Granted patent for an IaC scanner that parses infrastructure files, evaluates locally executable SQL-based security policies, stores findings and provides remediation guidance before uploading results to a cloud posture platform.",
+      "url": "https://patents.justia.com/patent/12598208"
     },
     {
       "id": "pat-2",
-      "number": "Pub. No. 20250202926",
+      "number": "U.S. Patent Application 20250202926 · Published Jun 19, 2025",
       "name": "Cloud-Based Data Security Posture Management (DSPM)",
-      "description": "Systems and methods for discovering, classifying, and monitoring data assets across heterogeneous cloud services, evaluating compliance, and enforcing localized policy frameworks."
+      "description": "Patent application covering cloud-based DSPM: discovering and classifying data across cloud services and endpoints, monitoring access and usage, evaluating misconfigurations and compliance, and enforcing security policies.",
+      "url": "https://patents.justia.com/patent/20250202926"
     }
   ],
   "skills": [
@@ -88,7 +90,7 @@
         [
           "Go (Golang)",
           "Expert",
-          95,
+          96,
           "bg-cyan"
         ],
         [
@@ -98,21 +100,27 @@
           "bg-violet"
         ],
         [
-          "Microservices & APIs",
+          "JavaScript / Angular",
           "Advanced",
-          92,
+          82,
           "bg-green"
+        ],
+        [
+          "Microservices & API Design",
+          "Expert",
+          94,
+          "bg-cyan"
         ]
       ]
     },
     {
       "id": "skill-cat-2",
-      "category": "Cloud & Kubernetes",
+      "category": "Cloud, Platform & Security",
       "items": [
         [
           "Kubernetes / EKS",
           "Expert",
-          95,
+          96,
           "bg-cyan"
         ],
         [
@@ -132,6 +140,18 @@
           "Advanced",
           90,
           "bg-cyan"
+        ],
+        [
+          "CNAPP / CSPM / DSPM",
+          "Expert",
+          94,
+          "bg-violet"
+        ],
+        [
+          "IaC Security / DevSecOps",
+          "Advanced",
+          90,
+          "bg-green"
         ]
       ]
     },
@@ -146,22 +166,28 @@
           "bg-cyan"
         ],
         [
-          "PostgreSQL / MongoDB",
+          "PostgreSQL / Oracle / MySQL",
           "Advanced",
-          88,
+          90,
           "bg-violet"
         ],
         [
-          "ClickHouse / Snowflake",
+          "MongoDB / ClickHouse",
           "Advanced",
           88,
           "bg-green"
         ],
         [
-          "Spark / Delta Lake / Databricks",
+          "Snowflake / Databricks / Spark",
           "Advanced",
-          84,
+          86,
           "bg-cyan"
+        ],
+        [
+          "Iceberg / Delta Lake / Trino",
+          "Working knowledge",
+          78,
+          "bg-violet"
         ]
       ]
     }
@@ -247,8 +273,119 @@
     }
   },
   "certifications": [
-    "Oracle Cloud Infrastructure 2023 Certified Architect Associate",
-    "Oracle Cloud Infrastructure 2023 Certified DevOps Professional",
-    "Neo4j Certified Professional"
+    {
+      "name": "Oracle Cloud Infrastructure 2023 Certified Architect Associate",
+      "issuer": "Oracle",
+      "year": "2023"
+    },
+    {
+      "name": "Oracle Cloud Infrastructure 2023 Certified DevOps Professional",
+      "issuer": "Oracle",
+      "year": "2023"
+    },
+    {
+      "name": "Neo4j Certified Professional",
+      "issuer": "Neo4j",
+      "year": ""
+    },
+    {
+      "name": "Docker for Java Developers",
+      "issuer": "LinkedIn Learning",
+      "year": "2021"
+    },
+    {
+      "name": "Big Data Computing",
+      "issuer": "NPTEL",
+      "year": "2020"
+    },
+    {
+      "name": "Learning Hadoop",
+      "issuer": "LinkedIn Learning",
+      "year": "2020"
+    },
+    {
+      "name": "Elasticsearch Essential Training",
+      "issuer": "LinkedIn Learning",
+      "year": "2019"
+    },
+    {
+      "name": "Spring: Spring Cloud",
+      "issuer": "LinkedIn Learning",
+      "year": "2019"
+    },
+    {
+      "name": "Kafka Essential Training",
+      "issuer": "LinkedIn Learning",
+      "year": "2019"
+    },
+    {
+      "name": "Sun Certified Java Programmer",
+      "issuer": "Oracle",
+      "year": "2008"
+    },
+    {
+      "name": "Angular",
+      "issuer": "LinkedIn Learning",
+      "year": ""
+    }
+  ],
+  "projects": [
+    {
+      "id": "project-mcafee",
+      "company": "McAfee",
+      "period": "Aug 2019 – Aug 2021",
+      "title": "Cloud Connector & Real-Time Security Telemetry",
+      "description": "Built a real-time log collection pipeline using AWS S3, Elastic Beanstalk and Kafka with Auto Scaling Groups. Integrated Spring Boot services with Prometheus, Grafana and Spring Actuator; contributed to FIPS support for FedRAMP High, Cloud Connector configuration and customer health notifications.",
+      "tags": [
+        "AWS",
+        "Kafka",
+        "Spring Boot",
+        "Prometheus",
+        "Grafana",
+        "FedRAMP"
+      ]
+    },
+    {
+      "id": "project-ivy",
+      "company": "IVY Software Development Services",
+      "period": "Jul 2010 – Jul 2019",
+      "title": "PCI DSS Payment Gateway for GVC / Entain",
+      "description": "Designed and built a PCI DSS payment gateway using Spring, Apache CXF, Tomcat and Oracle, integrating roughly 20 payment methods through REST and SOAP. Also delivered cashier performance improvements, transaction migrations, distributed caching, ELK logging, Quick Deposit and asynchronous email/SMS alerts; addressed XSS and CSRF risks.",
+      "tags": [
+        "PCI DSS",
+        "Java",
+        "Spring",
+        "REST / SOAP",
+        "Oracle",
+        "ELK"
+      ]
+    },
+    {
+      "id": "project-hp",
+      "company": "HP India Software Operations",
+      "period": "Nov 2009 – Jul 2010",
+      "title": "Serviceguard Manager",
+      "description": "Developed UI and backend capabilities for high-availability administration across Serviceguard, Serviceguard Extension for RAC, Metrocluster and Continentalclusters, using Java and JavaScript.",
+      "tags": [
+        "Java",
+        "JavaScript",
+        "High Availability",
+        "Enterprise Systems"
+      ]
+    },
+    {
+      "id": "project-ibm",
+      "company": "IBM India",
+      "period": "Aug 2007 – Nov 2009",
+      "title": "Fuel Cell Data Acquisition System — Daimler AG",
+      "description": "Contributed to a system that securely transferred data from fuel-cell data recorders to local file servers and central data management. Built Java/Struts and DB2 features deployed on WebSphere and supporting shell scripts.",
+      "tags": [
+        "Java",
+        "Struts",
+        "DB2",
+        "WebSphere",
+        "Shell scripting"
+      ]
+    }
   ]
 }
