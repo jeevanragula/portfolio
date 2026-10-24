@@ -430,3 +430,25 @@ html[data-theme="light"] .skill-val{color:#526176}
 .skill-bar-bg{display:none!important}
 #btn-resume{border-color:rgba(0,229,255,.4)}
 html[data-theme="light"] .skill-val{color:#526176}
+
+
+/* Compact footer: avoid repeating header navigation and keep the primary actions together. */
+.footer-container{align-items:center}
+.footer-col-about{flex:1;min-width:0}
+.footer-col-about .footer-text{margin:10px 0 0}
+.footer-actions{display:flex;align-items:center;justify-content:flex-end;gap:12px;flex-wrap:wrap}
+.footer-actions .btn{white-space:nowrap;padding:10px 15px}
+.footer-explore{color:var(--text)}
+.footer-resume{border-color:rgba(0,229,255,.4)}
+.footer-social-links{display:flex;align-items:center;gap:14px;margin-left:8px}
+.footer-social-links a{color:var(--muted);font-size:13px;text-decoration:none}
+.footer-social-links a:hover{color:var(--cyan)}
+@media(max-width:900px){
+  .footer-container{align-items:flex-start}
+  .footer-actions{justify-content:flex-start}
+}
+@media(max-width:600px){
+  .footer-actions{display:grid;grid-template-columns:1fr 1fr;width:100%;gap:10px}
+  .footer-actions .btn{width:100%;padding:10px 8px;font-size:13px}
+  .footer-social-links{grid-column:1/-1;margin:4px 0 0;justify-content:flex-start}
+}
