@@ -44,10 +44,10 @@
       "badge": "Core Architecture",
       "title": "Data Security Posture Management (DSPM)",
       "icon": "dspm",
-      "description": "Core architect and engineer for distributed DSPM scanning workflows, covering dynamic data snapshots, cloud storage and database crawling, distributed scan execution, DLP integration, and results processing in a multi-tenant cloud environment.",
+      "description": "Core architect and engineer for DSPM scanning and data-security workflows across cloud storage and databases. Designed distributed scan execution, DLP integration, and results processing for a multi-tenant platform.",
       "features": [
         "Cloud data discovery across customer environments",
-        "Distributed file and database scanning workflows",
+        "Distributed file and database scanning",
         "DLP integration and scan-result processing",
         "Multi-tenant cloud-scale orchestration"
       ]
@@ -57,11 +57,11 @@
       "badge": "Cloud Security Platform",
       "title": "Zscaler Posture Control (ZPC)",
       "icon": "zpc",
-      "description": "Core engineer and architect involved in building ZPC, a cloud security platform spanning cloud inventory, posture management, policy evaluation, IaC security, vulnerability workflows, and integrations across AWS, Azure, GCP, Kubernetes and developer platforms.",
+      "description": "Core engineer and architect on Zscaler Posture Control (ZPC), spanning cloud inventory, posture management, policy evaluation, IaC security and vulnerability workflows across AWS, Azure, GCP, Kubernetes and developer platforms.",
       "features": [
-        "Multi-cloud security and resource inventory",
-        "Cloud posture and policy evaluation",
-        "IaC security and vulnerability workflows",
+        "Multi-cloud inventory and posture management",
+        "Policy evaluation and vulnerability workflows",
+        "IaC security integrated into developer workflows",
         "Distributed microservices on Kubernetes"
       ]
     }
@@ -172,56 +172,56 @@
       "Oct 2024 - Present",
       "Architect",
       "Zscaler India Pvt Ltd",
-      "Architecting cloud security and AI security platforms, including Zscaler Posture Control, DSPM and AI security initiatives. Focus areas include Go microservices, Kubernetes, multi-cloud security, distributed data platforms, event-driven systems, and AI-native architectures."
+      "Architecting cloud security and AI security platforms including ZPC, DSPM and AI security initiatives. Focus areas include Go microservices, Kubernetes, multi-cloud security, distributed data platforms and AI-native architectures."
     ],
     [
       "time-item-2",
       "Apr 2022 - Sep 2024",
       "Principal Software Engineer",
       "Zscaler India Pvt Ltd",
-      "Core engineer and technical leader across Zscaler cloud security products, contributing to architecture, distributed services, cloud security workflows, data platforms, and large-scale Kubernetes-based systems."
+      "Core engineer and technical leader across cloud security products. Resume highlights architecture for IaC and container security, cross-functional engineering, Kafka and CI/CD integrations, threat detection and compliance checks, and scalable infrastructure security."
     ],
     [
       "time-item-3",
       "Aug 2021 - Mar 2022",
-      "Senior Staff Software Engineer",
+      "Senior Staff Engineer",
       "Zscaler India Pvt Ltd",
-      "Worked on cloud security product engineering, distributed services, event-driven systems and security technologies while contributing to the architecture and scale-up of Zscaler's cloud security platform."
+      "Architected and built cloud security product capabilities for IaC and container security, with emphasis on scalable, fault-tolerant cloud-native services. (The uploaded resume lists this period within the broader Zscaler role beginning Aug 2021.)"
     ],
     [
       "time-item-4",
       "Aug 2019 - Aug 2021",
       "Senior Staff Engineer",
       "McAfee India Pvt Ltd",
-      "Worked on the Cloud Connector team for McAfee's Cloud Access Security Broker (CASB), developing cloud-service integrations and connector workflows for enterprise cloud applications."
+      "Built a real-time log collection service using AWS S3, Elastic Beanstalk and Kafka with Auto Scaling Groups; integrated Spring Boot services with Prometheus, Grafana and Spring Actuator; enabled FIPS support for FedRAMP High; worked on Cloud Connector configuration and customer health notifications."
     ],
     [
       "time-item-5",
       "Jul 2010 - Jul 2019",
       "Lead - Software Development",
       "IVY Software Development Services Pvt Ltd",
-      "Led software development for an enterprise PCI DSS-compliant payment gateway for Entain. Work included payment-provider integrations, transaction processing, Java/Spring services, database-backed workflows, and payment-system reliability."
+      "Designed and built a PCI DSS-certified payment gateway for GVC using Spring, Apache CXF, Tomcat and Oracle. Integrated around 20 payment methods via REST/SOAP; improved cashier page load to about two seconds; implemented ELK logging, Quick Deposit, large transaction migrations, distributed caching, live chat and asynchronous email/SMS alerts; addressed XSS and CSRF risks."
     ],
     [
       "time-item-6",
       "Nov 2009 - Jul 2010",
       "Software Engineer",
-      "HP",
-      "Worked on HP Serviceguard for Linux and related high-availability management software, contributing to enterprise management tooling using Java and JavaScript."
+      "HP India Software Operations Pvt Ltd",
+      "Worked on Serviceguard Manager, a GUI for configuring, monitoring and administering Serviceguard, Serviceguard Extension for RAC, Metrocluster and Continentalclusters. Developed backend and frontend features using Java and JavaScript."
     ],
     [
       "time-item-7",
-      "Aug 2007 - Oct 2009",
+      "Aug 2007 - Nov 2009",
       "Application Developer",
-      "IBM",
-      "Built enterprise automotive-domain applications at IBM, using Java and object-oriented software development practices."
+      "IBM India Pvt Ltd",
+      "Worked on the Fuel Cell Data Acquisition System for Daimler AG, securely transferring data from data recorders to local file servers and central data management. Developed shell scripts and Java/Struts/DB2 features deployed on WebSphere."
     ],
     [
       "time-item-8",
       "2003 - 2007",
-      "B.Tech in Electronics & Communication Engineering",
+      "B.Tech, Electronics & Communication Engineering",
       "JNTU Hyderabad",
-      "Bachelor of Technology in Electronics & Communication Engineering, completed at Jawaharlal Nehru Technological University, Hyderabad."
+      "Bachelor of Technology in Electronics & Communication Engineering, Jawaharlal Nehru Technological University, Hyderabad."
     ]
   ],
   "openSource": {
@@ -245,5 +245,10 @@
       "patents": "U.S. Patent 12,598,208 · Pub. No. 20250202926",
       "contact": "Hyderabad, India · LinkedIn: linkedin.com/in/jeevanragula"
     }
-  }
+  },
+  "certifications": [
+    "Oracle Cloud Infrastructure 2023 Certified Architect Associate",
+    "Oracle Cloud Infrastructure 2023 Certified DevOps Professional",
+    "Neo4j Certified Professional"
+  ]
 }
