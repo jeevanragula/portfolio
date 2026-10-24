@@ -291,3 +291,27 @@ html[data-theme="light"] .theme-toggle:hover{background:rgba(0,127,158,.14)}
   html{scroll-behavior:auto}
   .theme-toggle{transition:none}
 }
+
+
+/* Theme contrast and alignment fixes */
+.theme-toggle{width:36px;height:36px;min-width:36px;padding:0;margin-left:6px;border-radius:50%;display:inline-grid;place-items:center;line-height:1}
+.theme-toggle-icon{display:block;font-size:18px;line-height:1}
+@media(min-width:901px){.nav-menu{align-items:center}.nav-link{display:inline-flex;align-items:center;min-height:36px}.theme-toggle{margin-left:8px}}
+.social-channels a:first-child .social-icon{color:#0a66c2}
+html[data-theme="light"] .timeline-company,html[data-theme="light"] .project-card p strong,html[data-theme="light"] .repo-name,html[data-theme="light"] .repo-lang,html[data-theme="light"] .certification-issuer{color:#243247}
+html[data-theme="light"] .timeline-company{font-weight:600}
+html[data-theme="light"] .hero-terminal{background:#fff;border-color:#d5deea}
+html[data-theme="light"] .hero-terminal .terminal-header{background:#e9eff6;border-bottom-color:#d5deea}
+html[data-theme="light"] .hero-terminal .terminal-title{color:#526176}
+html[data-theme="light"] .hero-terminal .terminal-body{background:#fff;color:#263449}
+html[data-theme="light"] .hero-terminal .output-line{color:#334155}
+html[data-theme="light"] .hero-terminal .output-line.system{color:#64748b}
+html[data-theme="light"] .hero-terminal .output-line.reply{color:#334155}
+html[data-theme="light"] .hero-terminal .terminal-user{color:#16834b}
+html[data-theme="light"] .hero-terminal .terminal-input-line input{color:#172033}
+html[data-theme="light"] .hero-terminal .terminal-input-line input::placeholder{color:#64748b}
+html[data-theme="light"] .sim-terminal{background:#fff;border-color:#d5deea}
+html[data-theme="light"] .sim-terminal .terminal-line,html[data-theme="light"] .sim-terminal .terminal-line.placeholder{color:#263449}
+html[data-theme="light"] .sim-terminal .terminal-line.placeholder{background:#fff}
+html[data-theme="light"] .sim-terminal .terminal-line:not(.placeholder){color:#8b1e1e;background:#fff7f7}
+html[data-theme="light"] .nav-menu .theme-toggle{color:var(--text)}
