@@ -29,7 +29,7 @@ Cloud-native and AI security architect with 19 years of software engineering exp
 
 ### IVY Software Development Services Pvt Ltd · Lead – Software Development · Jul 2010–Jul 2019
 - Led engineering for a PCI DSS-certified payment gateway and cashier platform.
-- Integrated approximately 20 payment methods through REST and SOAP for GVC/Entain.
+- Integrated approximately 20 payment methods through REST and SOAP for GVC/Entain; improved cashier page load to about two seconds.
 - Worked on transaction processing, distributed caching, security hardening and enterprise databases.
 
 ### HP India Software Operations Pvt Ltd · Software Engineer · Nov 2009–Jul 2010
