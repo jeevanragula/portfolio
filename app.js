@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const footerCopyright = qs(".footer-copyright p");
     if (footerCopyright) footerCopyright.textContent = `© 2026 ${profile.name}. All rights reserved.`;
 
-    initTerminal(data.terminal.commands);
+    initTerminal(data.terminal.commands, data);
   }
 
   function renderProducts(products) {
@@ -197,27 +197,145 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
   }
 
-  function initTerminal(commands = {}) {
+  function initTerminal(commands = {}, data = {}) {
     const input = document.getElementById("terminal-input");
     const output = document.getElementById("terminal-output");
     if (!input || !output) return;
 
+    const history = [];
+    let historyIndex = 0;
+    const profile = data.profile || {};
+
+    const addLine = (text, className = "output-line reply") => {
+      const line = document.createElement("div");
+      line.className = className;
+      line.textContent = text;
+      output.appendChild(line);
+      return line;
+    };
+
+    const addLinkReply = (label, href) => {
+      const line = document.createElement("div");
+      line.className = "output-line reply";
+      const link = document.createElement("a");
+      link.href = href;
+      link.textContent = label;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+      line.appendChild(link);
+      output.appendChild(line);
+    };
+
+    const listProjects = () => {
+      (data.projects || []).forEach(project => {
+        addLine(project.title + " — " + project.company + " (" + project.period + ")");
+        addLine("  " + project.description);
+      });
+      if (!(data.projects || []).length) addLine("No project details are available.");
+    };
+
+    const listExperience = () => {
+      (data.career || []).forEach(entry => {
+        const [, period, title, company, details] = entry;
+        addLine(period + " | " + title + " — " + company);
+        if (details) addLine("  " + details);
+      });
+      if (!(data.career || []).length) {
+        (profile.roleHistory || []).forEach(role => addLine(role.period + " | " + role.title + " — " + role.company));
+      }
+    };
+
+    const listCertifications = () => {
+      (data.certifications || []).forEach(cert => {
+        addLine(cert.name + " — " + cert.issuer + (cert.year ? " (" + cert.year + ")" : ""));
+      });
+      if (!(data.certifications || []).length) addLine("No certification details are available.");
+    };
+
+    const listPatents = () => {
+      (data.patents || []).forEach(patent => {
+        addLine(patent.name + " — " + patent.number);
+        if (patent.url) addLinkReply("View patent ↗", patent.url);
+      });
+      if (!(data.patents || []).length) addLine(commands.patents || "No patent details are available.");
+    };
+
+    const handlers = {
+      help: () => {
+        addLine("Available commands:");
+        addLine("  whoami, bio, skills, products, projects, experience, patents");
+        addLine("  certifications, education, resume, github, linkedin, contact, ls, clear");
+        addLine("Tip: use ↑ / ↓ to browse command history.");
+      },
+      whoami: () => addLine((profile.name || "Jeevan Reddy Ragula") + " — " + (profile.title || "Cloud-Native & AI Security Architect") + " @ " + (profile.company || "Zscaler")),
+      bio: () => addLine(profile.description || commands.bio || "Profile details are unavailable."),
+      skills: () => addLine(commands.skills || "Skills information is unavailable."),
+      products: () => {
+        (data.products || []).forEach(product => addLine(product.title + " — " + product.description));
+        if (!(data.products || []).length) addLine(commands.products || "Product details are unavailable.");
+      },
+      projects: listProjects,
+      experience: listExperience,
+      patents: listPatents,
+      certifications: listCertifications,
+      education: () => {
+        const education = (data.career || []).filter(entry => /b\.tech|bachelor|education/i.test(String(entry[2]) + " " + String(entry[3]) + " " + String(entry[4] || "")));
+        if (education.length) education.forEach(entry => addLine(entry[1] + " | " + entry[2] + " — " + entry[3] + ": " + (entry[4] || "")));
+        else addLine("B.Tech, Electronics & Communication Engineering — JNTU Hyderabad (2003–2007).");
+      },
+      resume: () => addLinkReply("Download resume (PDF) ↗", "resume.pdf"),
+      github: () => addLinkReply("GitHub profile ↗", profile.github || "https://github.com/jeevanragula"),
+      linkedin: () => addLinkReply("LinkedIn profile ↗", profile.linkedin || "https://www.linkedin.com/in/jeevanragula/"),
+      contact: () => {
+        addLine((profile.location || (data.contact && data.contact.location) || "Hyderabad, India") + " · " + (profile.email || "Email available on the contact section"));
+        if (profile.email) addLinkReply("Email " + profile.email + " ↗", "mailto:" + profile.email);
+        if (profile.linkedin) addLinkReply("LinkedIn profile ↗", profile.linkedin);
+      },
+      ls: () => {
+        addLine("bio.txt  skills.json  products/  projects/  patents/  certifications/  experience/  resume.pdf");
+        addLine("(Simulated portfolio files — this terminal is read-only.)");
+      },
+      clear: () => { output.innerHTML = ""; }
+    };
+
+    const initialReply = output.querySelector(".output-line.reply");
+    if (initialReply) {
+      initialReply.textContent = (profile.name || "Jeevan Reddy Ragula") + " — " +
+        (profile.title || "Principal Cloud-Native & AI Security Architect") + " based in " +
+        (profile.location || "Hyderabad, India") + ". Explore the portfolio with 'help'.";
+    }
+
+    input.setAttribute("autocomplete", "off");
     input.addEventListener("keydown", event => {
+      if (event.key === "ArrowUp" || event.key === "ArrowDown") {
+        event.preventDefault();
+        if (!history.length) return;
+        historyIndex = event.key === "ArrowUp"
+          ? Math.max(0, historyIndex - 1)
+          : Math.min(history.length, historyIndex + 1);
+        input.value = historyIndex === history.length ? "" : history[historyIndex];
+        return;
+      }
       if (event.key !== "Enter") return;
-      const command = input.value.trim().toLowerCase();
+
+      const raw = input.value.trim();
+      if (!raw) return;
+      const command = raw.toLowerCase().split(/\s+/)[0];
+      history.push(raw);
+      historyIndex = history.length;
+
       const line = document.createElement("div");
       line.className = "output-line";
-      line.innerHTML = '<span class="terminal-user">guest@portfolio:~$</span> ' + escapeHtml(command);
+      const prompt = document.createElement("span");
+      prompt.className = "terminal-user";
+      prompt.textContent = "guest@portfolio:~$";
+      line.appendChild(prompt);
+      line.appendChild(document.createTextNode(" " + raw));
       output.appendChild(line);
 
-      if (command === "clear") {
-        output.innerHTML = "";
-      } else {
-        const reply = document.createElement("div");
-        reply.className = "output-line reply";
-        reply.textContent = commands[command] || "Command not found. Type help.";
-        output.appendChild(reply);
-      }
+      if (handlers[command]) handlers[command]();
+      else if (commands[command]) addLine(commands[command]);
+      else addLine('Command not found: "' + command + '". Type "help" to see available commands.');
 
       input.value = "";
       output.parentElement.scrollTop = output.parentElement.scrollHeight;
