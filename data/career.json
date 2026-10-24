@@ -304,7 +304,7 @@
       "github": "https://github.com/jeevanragula",
       "linkedin": "https://www.linkedin.com/in/jeevanragula/",
       "resume": "Download the current resume PDF: https://jeevanragula.github.io/resume.pdf",
-      "projects": "Use projects to explore Manvasa, WealthOS, Enterprise Payment Gateway, and Cloud Connector & Security Telemetry.",
+      "projects": "Use projects to explore Manvasa, WealthOS, Enterprise Payment Gateway, Cloud Connector & Security Telemetry, Serviceguard Manager, and the Fuel Cell Data Acquisition System.",
       "experience": "Use experience to browse the full career timeline.",
       "certifications": "CKAD · KCNA · KCSA · Oracle Cloud Infrastructure DevOps Professional · Oracle Cloud Infrastructure Architect Associate",
       "education": "B.Tech, Electronics & Communication Engineering — JNTU Hyderabad (2003–2007)."
@@ -394,6 +394,33 @@
         "Kafka",
         "Spring Boot",
         "Prometheus"
+      ]
+    },
+    {
+      "id": "project-hp-serviceguard",
+      "company": "HP India Software Operations",
+      "period": "2009–2010",
+      "title": "Serviceguard Manager",
+      "description": "Developed backend and frontend capabilities for Serviceguard Manager, a GUI used to configure, monitor and administer Serviceguard, Serviceguard Extension for RAC, Metrocluster and Continentalclusters.",
+      "tags": [
+        "Java",
+        "JavaScript",
+        "Enterprise Management",
+        "High Availability"
+      ]
+    },
+    {
+      "id": "project-ibm-fuel-cell",
+      "company": "IBM · Daimler AG",
+      "period": "2007–2009",
+      "title": "Fuel Cell Data Acquisition System",
+      "description": "Contributed to a system that securely transferred data from fuel-cell data recorders to local file servers and central data management. Developed shell scripts and Java/Struts/DB2 features deployed on WebSphere.",
+      "tags": [
+        "Java",
+        "Struts",
+        "DB2",
+        "WebSphere",
+        "Shell Scripting"
       ]
     }
   ]
