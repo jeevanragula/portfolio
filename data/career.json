@@ -57,12 +57,12 @@
       "badge": "Cloud Security Platform",
       "title": "Zscaler Posture Control (ZPC)",
       "icon": "zpc",
-      "description": "Core engineer and architect on Zscaler Posture Control, spanning multi-cloud inventory, posture management, policy evaluation, infrastructure-as-code security and vulnerability workflows across AWS, Azure, GCP, Kubernetes and developer platforms.",
+      "description": "Core engineer and architect on Zscaler Posture Control (ZPC), spanning multi-cloud posture management and cloud-native workload security across AWS, Azure, GCP and Kubernetes. Capabilities include Kubernetes Security Posture Management (KSPM), container image scanning, vulnerability detection, policy evaluation, infrastructure-as-code (IaC) security and remediation workflows integrated into developer platforms.",
       "features": [
         "Multi-cloud inventory and posture management",
-        "Policy evaluation and vulnerability workflows",
-        "IaC security integrated into developer workflows",
-        "Cloud-native distributed services on Kubernetes"
+        "Kubernetes Security Posture Management (KSPM)",
+        "Container image scanning and vulnerability detection",
+        "IaC security, policy evaluation and remediation workflows"
       ]
     },
     {
