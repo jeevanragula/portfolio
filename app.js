@@ -316,7 +316,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         if (education.length) education.forEach(entry => addLine(entry[1] + " | " + entry[2] + " — " + entry[3] + ": " + (entry[4] || "")));
         else addLine("B.Tech, Electronics & Communication Engineering — JNTU Hyderabad (2003–2007).");
       },
-      resume: () => addLinkReply("Download resume (PDF) ↓", "resume.pdf", true),
+      resume: () => addLinkReply("Download resume (PDF) ↓", "https://jeevanragula.github.io/resume.pdf", true),
       github: () => addLinkReply("GitHub profile ↗", profile.github || "https://github.com/jeevanragula"),
       linkedin: () => addLinkReply("LinkedIn profile ↗", profile.linkedin || "https://www.linkedin.com/in/jeevanragula/"),
       contact: () => {
