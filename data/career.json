@@ -28,10 +28,10 @@
   "products": [
     {
       "id": "prod-aisec",
-      "badge": "AI Security",
+      "badge": "Latest Initiative · AI Security",
       "title": "AI Security / AI Asset Management",
       "icon": "ai",
-      "description": "Architecting an AI security and asset-management platform that inventories AI models, agents, MCP servers, workloads and AI identities across cloud and developer ecosystems. Work includes source aggregation, model intelligence, supply-chain risk signals and integrations across AWS, Azure, GCP, Hugging Face and Ollama.",
+      "description": "Architecting an AI security and asset-management platform that inventories AI models, agents, MCP servers, workloads and AI identities across cloud and developer ecosystems. The platform brings together model intelligence, provenance and supply-chain risk signals from multiple model providers and registries.",
       "features": [
         "AI model, agent, MCP server and workload inventory",
         "Model metadata, provenance and supply-chain risk intelligence",
@@ -41,15 +41,15 @@
     },
     {
       "id": "prod-dspm",
-      "badge": "Core Architecture",
+      "badge": "Data Security",
       "title": "Data Security Posture Management (DSPM)",
       "icon": "dspm",
-      "description": "Core architect and engineer for DSPM scanning and data-security workflows across cloud storage and databases. Designed distributed scan execution, DLP integration, and results processing for a multi-tenant platform.",
+      "description": "Core architect and engineer for cloud-scale DSPM capabilities that discover, classify and monitor sensitive data across cloud storage and databases. Designed distributed scan execution, DLP integration and findings processing for a multi-tenant security platform.",
       "features": [
-        "Cloud data discovery across customer environments",
+        "Cloud data discovery and classification",
         "Distributed file and database scanning",
-        "DLP integration and scan-result processing",
-        "Multi-tenant cloud-scale orchestration"
+        "DLP findings integration and results processing",
+        "Multi-tenant orchestration and scalable scan workflows"
       ]
     },
     {
@@ -57,12 +57,25 @@
       "badge": "Cloud Security Platform",
       "title": "Zscaler Posture Control (ZPC)",
       "icon": "zpc",
-      "description": "Core engineer and architect on Zscaler Posture Control (ZPC), spanning cloud inventory, posture management, policy evaluation, IaC security and vulnerability workflows across AWS, Azure, GCP, Kubernetes and developer platforms.",
+      "description": "Core engineer and architect on Zscaler Posture Control, spanning multi-cloud inventory, posture management, policy evaluation, infrastructure-as-code security and vulnerability workflows across AWS, Azure, GCP, Kubernetes and developer platforms.",
       "features": [
         "Multi-cloud inventory and posture management",
         "Policy evaluation and vulnerability workflows",
         "IaC security integrated into developer workflows",
-        "Distributed microservices on Kubernetes"
+        "Cloud-native distributed services on Kubernetes"
+      ]
+    },
+    {
+      "id": "prod-ivy",
+      "badge": "Fintech · Payments",
+      "title": "Enterprise Payment Gateway — GVC / Entain",
+      "icon": "payments",
+      "description": "Across nine years at IVY Comptech, contributed to a PCI DSS-certified payment gateway and cashier platform used across the GVC / Entain group. The system connected multiple payment providers and methods to a consistent payment experience, supporting deposits and transaction processing for a large online gaming business.",
+      "features": [
+        "Integrated approximately 20 payment methods through REST and SOAP",
+        "Payment gateway and cashier workflows for GVC / Entain",
+        "Transaction migrations, distributed caching and performance improvements",
+        "Security hardening, ELK logging and asynchronous email/SMS alerts"
       ]
     }
   ],
@@ -303,6 +316,24 @@
     }
   },
   "certifications": [
+    {
+      "name": "Certified Kubernetes Administrator (CKA)",
+      "issuer": "The Linux Foundation / CNCF",
+      "year": "",
+      "url": "https://www.credly.com/badges/d668214c-2a76-414a-9793-817b5f28a886/linked_in_profile"
+    },
+    {
+      "name": "Kubernetes and Cloud Native Associate (KCNA)",
+      "issuer": "The Linux Foundation / CNCF",
+      "year": "",
+      "url": "https://www.credly.com/badges/613c5a9b-a2c5-4895-9b96-e6d20ba7d200/linked_in_profile"
+    },
+    {
+      "name": "Kubernetes and Cloud Native Security Associate (KCSA)",
+      "issuer": "The Linux Foundation / CNCF",
+      "year": "",
+      "url": "https://www.credly.com/badges/2b8e3438-d6b5-446f-a6fe-bb3e0208c44f"
+    },
     {
       "name": "Oracle Cloud Infrastructure 2023 Certified Architect Associate",
       "issuer": "Oracle",
