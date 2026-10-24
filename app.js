@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     setText(".status-text", `${profile.title} @ ${profile.company}`);
     setText(".hero-title", "");
     const heroTitle = qs(".hero-title");
-    if (heroTitle) heroTitle.innerHTML = `Architecting the Future of <span class="gradient-text glow-cyan">Cloud Security</span>`;
+    if (heroTitle) heroTitle.innerHTML = escapeHtml(profile.title);
     const heroDescription = qs(".hero-description");
     if (heroDescription) heroDescription.innerHTML = escapeHtml(profile.description)
       .replace(/Zscaler Posture Control \(ZPC\)/g, "<strong>Zscaler Posture Control (ZPC)</strong>")
@@ -166,13 +166,12 @@ document.addEventListener("DOMContentLoaded", async () => {
       setText(".category-title", category.category, item);
       const list = qs(".skill-list", item);
       if (!list) return;
-      list.innerHTML = category.items.map(([name, level, width, barClass]) => `
+      list.innerHTML = category.items.map(([name, evidence]) => `
         <div class="skill-item">
-          <div class="skill-info"><span class="skill-name">${escapeHtml(name)}</span><span class="skill-val">${escapeHtml(level)}</span></div>
-          <div class="skill-bar-bg"><div class="skill-bar ${barClass}" style="width:0%" data-width="${width}%"></div></div>
+          <div class="skill-info"><span class="skill-name">${escapeHtml(name)}</span><span class="skill-val">${escapeHtml(evidence)}</span></div>
         </div>`).join("");
     });
-    animateSkillBars();
+    // Skill descriptions are evidence-led; no subjective percentage bars.
   }
 
   function renderCareerTimeline(entries) {
