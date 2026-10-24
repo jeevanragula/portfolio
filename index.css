@@ -452,15 +452,3 @@ html[data-theme="light"] .skill-val{color:#526176}
   .footer-actions .btn{width:100%;padding:10px 8px;font-size:13px}
   .footer-social-links{grid-column:1/-1;margin:4px 0 0;justify-content:flex-start}
 }
-
-
-
-/* Compact architecture details embedded directly in relevant product cards */
-.product-architecture{margin-top:20px;padding-top:16px;border-top:1px solid var(--border)}
-.product-architecture h4{font-size:13px;margin:0 0 10px;color:var(--text)}
-.product-flow{display:flex;align-items:stretch;gap:6px;flex-wrap:wrap}
-.product-flow span{display:flex;align-items:center;justify-content:center;flex:1 1 20%;min-width:70px;padding:9px 7px;border:1px solid var(--border);border-radius:8px;background:rgba(15,23,42,.35);font-size:10px;line-height:1.35;text-align:center;color:var(--text)}
-.product-flow b{display:flex;align-items:center;color:var(--cyan);font-size:13px}
-.product-architecture p{font-size:12px;line-height:1.55;color:var(--muted);margin:11px 0 0}
-.product-architecture p strong{color:var(--text)}
-@media(max-width:600px){.product-flow{gap:5px}.product-flow span{flex-basis:38%;font-size:10px}.product-flow b{font-size:11px}}
