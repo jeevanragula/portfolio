@@ -7,7 +7,7 @@ from reportlab.lib.units import mm
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, HRFlowable, KeepTogether
 import re
 
-source = Path("resume.md")
+source = Path(__file__).resolve().parents[1] / "resume.md"
 out = Path("public/resume.pdf")
 out.parent.mkdir(parents=True, exist_ok=True)
 styles = getSampleStyleSheet()
