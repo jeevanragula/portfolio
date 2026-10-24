@@ -364,3 +364,8 @@ html[data-theme="light"] .sim-editor-body{background:#111827;color:#e2e8f0}
 html[data-theme="light"] .social-btn{background:#fff;border-color:#d5deea}
 .social-channels a:first-child .social-icon{color:#0a66c2;stroke:none}
 .social-channels a:first-child .linkedin-mark{width:24px;height:24px}
+
+
+/* Contact intro readability in light mode */
+.contact-subtitle{font-size:15px;line-height:1.8;max-width:560px}
+html[data-theme="light"] .contact-info .contact-subtitle{color:#334155;font-weight:400;opacity:1}
