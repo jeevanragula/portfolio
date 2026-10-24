@@ -215,23 +215,59 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
   }
 
-  // Opens a prefilled email draft; static GitHub Pages cannot send mail by itself.
+  // Submit through FormSubmit; show success only after its API confirms acceptance.
   const form = document.getElementById("contact-form");
-  const success = document.getElementById("form-success");
-  if (form && success) {
-    form.addEventListener("submit", event => {
+  const submitButton = document.getElementById("btn-submit");
+  const formStatus = document.getElementById("form-status");
+  if (form && submitButton && formStatus) {
+    form.addEventListener("submit", async event => {
       event.preventDefault();
+      if (!form.reportValidity()) return;
+
       const name = document.getElementById("frm-name")?.value.trim() || "";
       const email = document.getElementById("frm-email")?.value.trim() || "";
       const subject = document.getElementById("frm-subject")?.value.trim() || "Portfolio enquiry";
       const message = document.getElementById("frm-message")?.value.trim() || "";
-      const body = `Name: ${name}\nEmail: ${email}\n\n${message}`;
-      const mailto = `mailto:jeevanragula@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-      window.location.href = mailto;
-      const status = document.getElementById("form-status");
-      if (status) status.textContent = "This form opens your email app with a prefilled draft. Review it and press Send to deliver; the website does not send email directly.";
+      const buttonText = submitButton.querySelector(".btn-text");
+      submitButton.disabled = true;
+      if (buttonText) buttonText.textContent = "Sending…";
+      formStatus.textContent = "Submitting your message…";
+      formStatus.classList.remove("form-status-success", "form-status-error");
+
+      try {
+        const response = await fetch("https://formsubmit.co/ajax/jeevanragula@gmail.com", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+          },
+          body: JSON.stringify({
+            name,
+            email,
+            _subject: subject,
+            message,
+            _template: "table"
+          })
+        });
+        const result = await response.json().catch(() => ({}));
+        if (!response.ok || result.success !== "true" && result.success !== true) {
+          throw new Error(result.message || "The email service did not accept the message.");
+        }
+
+        formStatus.textContent = "Your message was accepted by the form service. If this is your first submission, check Jeevan’s inbox for an activation email before delivery can begin.";
+        formStatus.classList.add("form-status-success");
+        form.reset();
+      } catch (error) {
+        console.error("Contact form submission failed:", error);
+        formStatus.textContent = "Your message could not be submitted. Please email jeevanragula@gmail.com directly.";
+        formStatus.classList.add("form-status-error");
+      } finally {
+        submitButton.disabled = false;
+        if (buttonText) buttonText.textContent = "Send Message";
+      }
     });
   }
+
 
   function escapeHtml(value) {
     return String(value).replace(/[&<>"']/g, char => ({
