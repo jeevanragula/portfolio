@@ -237,15 +237,45 @@ document.addEventListener("DOMContentLoaded", async () => {
       if (!(data.projects || []).length) addLine("No project details are available.");
     };
 
-    const listExperience = () => {
-      (data.career || []).forEach(entry => {
-        const [, period, title, company, details] = entry;
-        addLine(period + " | " + title + " — " + company);
-        if (details) addLine("  " + details);
-      });
-      if (!(data.career || []).length) {
-        (profile.roleHistory || []).forEach(role => addLine(role.period + " | " + role.title + " — " + role.company));
+    let experiencePage = 0;
+    const experiencePageSize = 2;
+    const listExperience = (argument = "") => {
+      const entries = data.career || [];
+      const fallback = (profile.roleHistory || []).map(role => ["", role.period, role.title, role.company, ""]);
+      const items = entries.length ? entries : fallback;
+      if (!items.length) {
+        addLine("No experience details are available.");
+        return;
       }
+
+      const totalPages = Math.ceil(items.length / experiencePageSize);
+      const arg = String(argument || "").toLowerCase();
+      if (arg === "next") experiencePage = Math.min(totalPages - 1, experiencePage + 1);
+      else if (arg === "prev" || arg === "previous") experiencePage = Math.max(0, experiencePage - 1);
+      else if (arg && /^\\d+$/.test(arg)) experiencePage = Math.max(0, Math.min(totalPages - 1, Number(arg) - 1));
+      else if (!arg) experiencePage = 0;
+
+      // Replace the previous experience page so paging never floods the terminal.
+      const previousPage = output.querySelector(".experience-page-output");
+      if (previousPage) previousPage.remove();
+      const pageOutput = document.createElement("div");
+      pageOutput.className = "experience-page-output";
+      output.appendChild(pageOutput);
+      const pageLine = text => {
+        const line = document.createElement("div");
+        line.className = "output-line reply";
+        line.textContent = text;
+        pageOutput.appendChild(line);
+      };
+
+      const start = experiencePage * experiencePageSize;
+      pageLine("Career history · Page " + (experiencePage + 1) + " of " + totalPages);
+      items.slice(start, start + experiencePageSize).forEach(entry => {
+        const [, period, title, company, details] = entry;
+        pageLine(period + " | " + title + " — " + company);
+        if (details) pageLine("  " + details);
+      });
+      pageLine("Navigation: experience next | experience prev | experience <page number>");
     };
 
     const listCertifications = () => {
@@ -266,7 +296,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const handlers = {
       help: () => {
         addLine("Available commands:");
-        addLine("  whoami, bio, skills, products, projects, experience, patents");
+        addLine("  whoami, bio, skills, products, projects, experience [page|next|prev], patents");
         addLine("  certifications, education, resume, github, linkedin, contact, ls, clear");
         addLine("Tip: use ↑ / ↓ to browse command history.");
       },
@@ -278,7 +308,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         if (!(data.products || []).length) addLine(commands.products || "Product details are unavailable.");
       },
       projects: listProjects,
-      experience: listExperience,
+      experience: args => listExperience(args[0] || ""),
       patents: listPatents,
       certifications: listCertifications,
       education: () => {
@@ -336,7 +366,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       line.appendChild(document.createTextNode(" " + raw));
       output.appendChild(line);
 
-      if (handlers[command]) handlers[command]();
+      const args = raw.split(/\\s+/).slice(1);\n      if (handlers[command]) handlers[command](args);
       else if (commands[command]) addLine(commands[command]);
       else addLine('Command not found: "' + command + '". Type "help" to see available commands.');
 
