@@ -315,3 +315,52 @@ html[data-theme="light"] .sim-terminal .terminal-line,html[data-theme="light"] .
 html[data-theme="light"] .sim-terminal .terminal-line.placeholder{background:#fff}
 html[data-theme="light"] .sim-terminal .terminal-line:not(.placeholder){color:#8b1e1e;background:#fff7f7}
 html[data-theme="light"] .nav-menu .theme-toggle{color:var(--text)}
+
+
+/* Final light-theme readability pass: override legacy hard-coded light-on-dark text */
+html[data-theme="light"] .timeline-company,
+html[data-theme="light"] .timeline-details,
+html[data-theme="light"] .timeline-card,
+html[data-theme="light"] .project-card p,
+html[data-theme="light"] .project-card p strong,
+html[data-theme="light"] .project-tags span,
+html[data-theme="light"] .certification-card h3,
+html[data-theme="light"] .certification-issuer,
+html[data-theme="light"] .certifications-note,
+html[data-theme="light"] .certifications-note a,
+html[data-theme="light"] .community-talk .repo-desc,
+html[data-theme="light"] .community-resources .repo-desc,
+html[data-theme="light"] .community-links a,
+html[data-theme="light"] .repo-desc,
+html[data-theme="light"] .repo-meta,
+html[data-theme="light"] .repo-lang,
+html[data-theme="light"] .repo-name,
+html[data-theme="light"] .skill-info,
+html[data-theme="light"] .product-features,
+html[data-theme="light"] .patent-desc,
+html[data-theme="light"] .simulator-intro,
+html[data-theme="light"] .details-item,
+html[data-theme="light"] .details-item .value,
+html[data-theme="light"] .footer-text,
+html[data-theme="light"] .footer-col-links a,
+html[data-theme="light"] .footer-copyright,
+html[data-theme="light"] .form-note,
+html[data-theme="light"] .label,
+html[data-theme="light"] .form-group label {
+  color:#334155;
+}
+html[data-theme="light"] .project-tags span{border-color:#cbd5e1;background:#f8fafc}
+html[data-theme="light"] .timeline-date,
+html[data-theme="light"] .project-period,
+html[data-theme="light"] .certification-link{color:#006b83}
+html[data-theme="light"] .community-event{color:#006b83}
+html[data-theme="light"] .community-event a,
+html[data-theme="light"] .community-links a,
+html[data-theme="light"] .certifications-note a{color:#006b83}
+html[data-theme="light"] .footer-col-links a:hover{color:#006b83}
+html[data-theme="light"] .form-group input::placeholder,
+html[data-theme="light"] .form-group textarea::placeholder{color:#64748b;opacity:1}
+html[data-theme="light"] .sim-editor-body{background:#111827;color:#e2e8f0}
+html[data-theme="light"] .social-btn{background:#fff;border-color:#d5deea}
+.social-channels a:first-child .social-icon{color:#0a66c2;stroke:none}
+.social-channels a:first-child .linkedin-mark{width:24px;height:24px}
