@@ -319,16 +319,11 @@
       "resume": "Download the current resume PDF: https://jeevanragula.github.io/resume.pdf",
       "projects": "Use projects to explore AI Security, DSPM, Cloud Posture & IaC Security, Payment Gateway, and Cloud Connector projects.",
       "experience": "Use experience to browse the full career timeline.",
-      "certifications": "CKA · CKAD · KCNA · KCSA · Oracle Cloud Infrastructure DevOps Professional · Oracle Cloud Infrastructure Architect Associate",
+      "certifications": "CKAD · KCNA · KCSA · Oracle Cloud Infrastructure DevOps Professional · Oracle Cloud Infrastructure Architect Associate",
       "education": "B.Tech, Electronics & Communication Engineering — JNTU Hyderabad (2003–2007)."
     }
   },
   "certifications": [
-    {
-      "name": "Certified Kubernetes Administrator (CKA)",
-      "issuer": "The Linux Foundation / CNCF",
-      "year": ""
-    },
     {
       "name": "Certified Kubernetes Application Developer (CKAD)",
       "issuer": "The Linux Foundation / CNCF",
