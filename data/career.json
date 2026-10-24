@@ -1,20 +1,20 @@
 {
   "profile": {
     "name": "Jeevan Reddy Ragula",
-    "title": "Cloud Security & AI Architect",
+    "title": "Principal Cloud-Native & AI Security Architect",
     "company": "Zscaler",
     "location": "Hyderabad, India",
     "experience": "19 years",
-    "headline": "Architecting AI Security & Cloud-Native Platforms",
-    "description": "With 19 years of software engineering experience, I architect and build AI security and cloud-native security platforms at scale. At Zscaler, my work includes AI Security and Data Security Posture Management (DSPM), alongside cloud security capabilities such as Zscaler Posture Control. I combine hands-on Go engineering with Kubernetes, multi-cloud architecture, distributed data platforms, event-driven systems, and AI-native architectures.",
+    "headline": "Principal Cloud-Native & AI Security Architect",
+    "description": "With 19 years of software engineering experience, I architect cloud-native security and AI security platforms. At Zscaler, my work spans AI Security, Data Security Posture Management (DSPM), and Zscaler Posture Control. I combine hands-on Go engineering with Kubernetes, multi-cloud architecture, distributed data platforms, event-driven systems, and AI-native architectures.",
     "email": "jeevanragula@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/jeevanragula",
+    "linkedin": "https://www.linkedin.com/in/jeevanragula/",
     "github": "https://github.com/jeevanragula",
-    "twitter": "https://twitter.com/jeevanragula",
+    "twitter": "https://x.com/jeevanragula",
     "portfolio": "https://jeevanragula.vercel.app/",
     "roleHistory": [
       {
-        "title": "Architect",
+        "title": "Principal Cloud-Native & AI Security Architect",
         "company": "Zscaler India Pvt Ltd",
         "period": "Oct 2024 - Present"
       },
@@ -102,26 +102,26 @@
       "items": [
         [
           "Go (Golang)",
-          "Expert",
-          96,
+          "Production services & platform engineering",
+          0,
           "bg-cyan"
         ],
         [
           "Java / Spring",
-          "Advanced",
-          88,
+          "Enterprise services & payment systems",
+          0,
           "bg-violet"
         ],
         [
           "JavaScript / Angular",
-          "Advanced",
-          82,
+          "Web tooling & frontend integrations",
+          0,
           "bg-green"
         ],
         [
           "Microservices & API Design",
-          "Expert",
-          94,
+          "Distributed service architecture",
+          0,
           "bg-cyan"
         ]
       ]
@@ -132,32 +132,32 @@
       "items": [
         [
           "Kubernetes / EKS",
-          "Expert",
-          96,
+          "Cloud-native platforms & operators",
+          0,
           "bg-cyan"
         ],
         [
           "AWS",
-          "Advanced",
-          92,
+          "Multi-cloud security & telemetry",
+          0,
           "bg-violet"
         ],
         [
           "Azure / GCP / OCI",
-          "Advanced",
-          85,
+          "Multi-cloud integrations",
+          0,
           "bg-green"
         ],
         [
           "Docker / Helm / Kustomize",
-          "Advanced",
-          90,
+          "Kubernetes delivery & operations",
+          0,
           "bg-cyan"
         ],
         [
           "FluxCD / GitOps / CI/CD",
-          "Advanced",
-          88,
+          "Deployment automation & release workflows",
+          0,
           "bg-violet"
         ]
       ]
@@ -168,32 +168,32 @@
       "items": [
         [
           "Kafka / Event Streaming",
-          "Advanced",
-          90,
+          "Event-driven processing",
+          0,
           "bg-cyan"
         ],
         [
           "PostgreSQL / Oracle / MySQL",
-          "Advanced",
-          90,
+          "Transactional & metadata stores",
+          0,
           "bg-violet"
         ],
         [
           "MongoDB / ClickHouse / Redis",
-          "Advanced",
-          88,
+          "Document, analytics & cache layers",
+          0,
           "bg-green"
         ],
         [
           "Snowflake / Databricks / Spark",
-          "Advanced",
-          86,
+          "Distributed data processing",
+          0,
           "bg-cyan"
         ],
         [
           "Iceberg / Delta Lake / Trino",
-          "Working knowledge",
-          80,
+          "Lakehouse & query ecosystems",
+          0,
           "bg-violet"
         ]
       ]
@@ -204,32 +204,32 @@
       "items": [
         [
           "CNAPP / CSPM / DSPM",
-          "Expert",
-          94,
+          "Cloud & data security products",
+          0,
           "bg-cyan"
         ],
         [
           "IaC Security / Policy Engines",
-          "Advanced",
-          90,
+          "Policy evaluation & scanner design",
+          0,
           "bg-violet"
         ],
         [
           "DLP / CloudTrail / Security Telemetry",
-          "Advanced",
-          88,
+          "Detection pipelines & findings",
+          0,
           "bg-green"
         ],
         [
           "AI Asset & Model Intelligence",
-          "Advanced",
-          88,
+          "Model, agent & MCP inventory",
+          0,
           "bg-cyan"
         ],
         [
           "Model Supply-Chain Risk / MCP Ecosystems",
-          "Working knowledge",
-          82,
+          "Provenance & risk signals",
+          0,
           "bg-violet"
         ]
       ]
@@ -239,7 +239,7 @@
     [
       "time-item-1",
       "Oct 2024 - Present",
-      "Architect",
+      "Principal Cloud-Native & AI Security Architect",
       "Zscaler India Pvt Ltd",
       "Architecting cloud security and AI security platforms including ZPC, DSPM and AI security initiatives. Focus areas include Go microservices, Kubernetes, multi-cloud security, distributed data platforms and AI-native architectures."
     ],
@@ -308,7 +308,7 @@
   "terminal": {
     "commands": {
       "help": "Available: help, bio, skills, products, patents, contact, clear",
-      "bio": "Jeevan Reddy Ragula — Principal Software Engineer & Architect. Cloud security, distributed systems, Kubernetes, Go and AI security.",
+      "bio": "Jeevan Reddy Ragula — Principal Cloud-Native & AI Security Architect. Cloud security, distributed systems, Kubernetes, Go and AI security.",
       "skills": "Go · Kubernetes · AWS · Azure · GCP · Kafka · PostgreSQL · MongoDB · ClickHouse · Spark · Databricks",
       "products": "AI Security / AI Asset Management · DSPM · Zscaler Posture Control",
       "patents": "U.S. Patent 12,598,208 · Pub. No. 20250202926",
@@ -319,20 +319,17 @@
     {
       "name": "Certified Kubernetes Administrator (CKA)",
       "issuer": "The Linux Foundation / CNCF",
-      "year": "",
-      "url": "https://www.credly.com/users/jeevanragula/badges/credly"
+      "year": ""
     },
     {
       "name": "Kubernetes and Cloud Native Associate (KCNA)",
       "issuer": "The Linux Foundation / CNCF",
-      "year": "",
-      "url": "https://www.credly.com/users/jeevanragula/badges/credly"
+      "year": ""
     },
     {
       "name": "Kubernetes and Cloud Native Security Associate (KCSA)",
       "issuer": "The Linux Foundation / CNCF",
-      "year": "",
-      "url": "https://www.credly.com/users/jeevanragula/badges/credly"
+      "year": ""
     },
     {
       "name": "Oracle Cloud Infrastructure Certified DevOps Professional",
@@ -343,66 +340,73 @@
       "name": "Oracle Cloud Infrastructure Certified Architect Associate",
       "issuer": "Oracle",
       "year": "2023"
-    },
-    {
-      "name": "Redis University Certification",
-      "issuer": "Redis University",
-      "year": "",
-      "url": "https://www.credential.net/profile/jeevanragula/wallet"
-    },
-    {
-      "name": "Distributed SQL Fundamentals",
-      "issuer": "YugabyteDB",
-      "year": "",
-      "url": "https://www.credential.net/profile/jeevanragula/wallet"
-    },
-    {
-      "name": "Neo4j Certified Professional",
-      "issuer": "Neo4j",
-      "year": ""
     }
   ],
   "projects": [
     {
+      "id": "project-ai-security",
+      "company": "Zscaler",
+      "period": "Current",
+      "title": "AI Security & Asset Intelligence",
+      "description": "Architecting an inventory and intelligence platform for AI models, agents, MCP servers, workloads and AI identities, consolidating model metadata, provenance and supply-chain risk signals across cloud and developer ecosystems.",
+      "tags": [
+        "Go",
+        "AI Security",
+        "MCP",
+        "PostgreSQL",
+        "Kubernetes"
+      ]
+    },
+    {
+      "id": "project-dspm",
+      "company": "Zscaler",
+      "period": "Cloud & Data Security",
+      "title": "Data Security Posture Management",
+      "description": "Designed distributed scan execution and findings workflows for a multi-tenant platform that discovers and classifies sensitive data across cloud storage and databases, integrating DLP findings and security telemetry.",
+      "tags": [
+        "DSPM",
+        "Distributed Scanning",
+        "DLP",
+        "Cloud Security"
+      ]
+    },
+    {
+      "id": "project-zpc",
+      "company": "Zscaler",
+      "period": "Cloud Security",
+      "title": "Cloud Posture & IaC Security",
+      "description": "Built cloud inventory, posture evaluation, vulnerability workflows and infrastructure-as-code security across AWS, Azure, GCP, Kubernetes and developer platforms. Related IaC scanner work is covered by a granted U.S. patent.",
+      "tags": [
+        "CNAPP",
+        "CSPM",
+        "IaC Security",
+        "Policy Engines"
+      ]
+    },
+    {
+      "id": "project-payments",
+      "company": "IVY Comptech / GVC",
+      "period": "2010–2019",
+      "title": "Enterprise Payment Gateway",
+      "description": "Contributed to a PCI DSS-certified payment gateway and cashier platform, integrating approximately 20 payment methods through REST and SOAP and supporting deposits and transaction processing for a large online gaming business.",
+      "tags": [
+        "PCI DSS",
+        "Java / Spring",
+        "REST / SOAP",
+        "Payments"
+      ]
+    },
+    {
       "id": "project-mcafee",
       "company": "McAfee",
-      "period": "Aug 2019 – Aug 2021",
-      "title": "Cloud Connector & Real-Time Security Telemetry",
-      "description": "Built a real-time log collection pipeline using AWS S3, Elastic Beanstalk and Kafka with Auto Scaling Groups. Integrated Spring Boot services with Prometheus, Grafana and Spring Actuator; contributed to FIPS support for FedRAMP High, Cloud Connector configuration and customer health notifications.",
+      "period": "2019–2021",
+      "title": "Cloud Connector & Security Telemetry",
+      "description": "Built real-time log collection and cloud connector capabilities using AWS S3 and Kafka, with observability integrations and FIPS-related support for regulated environments.",
       "tags": [
         "AWS",
         "Kafka",
         "Spring Boot",
-        "Prometheus",
-        "Grafana",
-        "FedRAMP"
-      ]
-    },
-    {
-      "id": "project-hp",
-      "company": "HP India Software Operations",
-      "period": "Nov 2009 – Jul 2010",
-      "title": "Serviceguard Manager",
-      "description": "Developed UI and backend capabilities for high-availability administration across Serviceguard, Serviceguard Extension for RAC, Metrocluster and Continentalclusters, using Java and JavaScript.",
-      "tags": [
-        "Java",
-        "JavaScript",
-        "High Availability",
-        "Enterprise Systems"
-      ]
-    },
-    {
-      "id": "project-ibm",
-      "company": "IBM India",
-      "period": "Aug 2007 – Nov 2009",
-      "title": "Fuel Cell Data Acquisition System — Daimler AG",
-      "description": "Contributed to a system that securely transferred data from fuel-cell data recorders to local file servers and central data management. Built Java/Struts and DB2 features deployed on WebSphere and supporting shell scripts.",
-      "tags": [
-        "Java",
-        "Struts",
-        "DB2",
-        "WebSphere",
-        "Shell scripting"
+        "Prometheus"
       ]
     }
   ]
